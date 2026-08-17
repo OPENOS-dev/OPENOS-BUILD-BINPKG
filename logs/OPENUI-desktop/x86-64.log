@@ -1,13 +1,12 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32007964852
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32007973049
 - 提交: 52db44be31936d202d0f7f4e2f4800ee2b21a0c1
-- 时间: 2026-08-17T07:56:13Z
+- 时间: 2026-08-17T07:56:34Z
 
 ## 构建日志尾部
 ```
-In file included from /usr/include/wlr/types/wlr_pointer.h:15:
 /usr/include/wlr/types/wlr_input_device.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
     6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
       |  ^~~~~
@@ -83,7 +82,8 @@ In file included from /usr/include/wlr/types/wlr_xdg_shell.h:14:
    16 | #include "xdg-shell-protocol.h"
       |          ^~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-[18/28] Compiling C object openos-compositor.p/meson-generated_xdg-shell-protocol.c.o
+[19/28] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[20/28] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
