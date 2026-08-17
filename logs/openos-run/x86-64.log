@@ -1,16 +1,16 @@
 # openos-run 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-run
-- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/32006315750
+- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/32006455365
 - 提交: 51a747219d0d3dfae893dee86c031687c2ecb59f
-- 时间: 2026-08-17T07:33:44Z
+- 时间: 2026-08-17T07:35:39Z
 
 ## 构建日志尾部
 ```
 The Meson build system
 Version: 1.3.2
 Source dir: /home/runner/work/OPENOS-run/OPENOS-run
-Build dir: /tmp/tmp.rvqwr0bXx9/build
+Build dir: /tmp/tmp.thQdfPDUhg/build
 Build type: native build
 Project name: openos-run
 Project version: DEV2026.1
@@ -42,7 +42,7 @@ openos-run DEV2026.1
     prefix   : /usr
 
 Found ninja-1.13.2 at /usr/local/bin/ninja
-ninja: Entering directory `/tmp/tmp.rvqwr0bXx9/build'
+ninja: Entering directory `/tmp/tmp.thQdfPDUhg/build'
 [1/5] Compiling Qt resources qt6-qml_qrc
 [2/5] Compiling C++ object openos-run.p/meson-generated_.._qt6-qml_qrc.cpp.o
 [3/5] Compiling C++ object openos-run.p/main.cpp.o
@@ -61,5 +61,5 @@ main.cpp:(.text.startup+0x179): undefined reference to `vtable for AppsModel'
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
-INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.rvqwr0bXx9/build
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.thQdfPDUhg/build
 ```
