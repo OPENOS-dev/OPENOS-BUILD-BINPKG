@@ -1,0 +1,37 @@
+# apt 构建失败 (arm64)
+
+- 仓库: OPENOS-dev/OPENOS-apt
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31993886049
+- 提交: 2a2de6bcc2c99f79cb59ee5a0ba09af3a20a7d3b
+- 时间: 2026-08-17T04:17:49Z
+
+## 构建日志尾部
+```
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for native LFS support
+-- Looking for native LFS support - found
+-- Found LFS: TRUE
+-- Looking for iconv_open
+-- Looking for iconv_open - found
+-- Found Iconv: /usr/include
+-- Found Perl: /usr/bin/perl (found version "5.38.2")
+CMake Error at CMakeLists.txt:52 (message):
+  Could not find triehash executable
+
+
+-- Configuring incomplete, errors occurred!
+```
