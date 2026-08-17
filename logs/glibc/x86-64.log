@@ -1,9 +1,9 @@
 # glibc 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-glibc
-- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31993872913
-- 提交: 5a4e5ce5d204b22f7b5d087ceab62ddcb87ef658
-- 时间: 2026-08-17T04:25:46Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/32000112948
+- 提交: 38e93f23b7fa7ca804118eddc1b275d198133c00
+- 时间: 2026-08-17T06:10:05Z
 
 ## 构建日志尾部
 ```
@@ -17,6 +17,8 @@ plural.y:52.1-7: warning: POSIX Yacc does not support %expect [-Wyacc]
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
+ar: ar: `u' modifier ignored since `D' is the default (see `U')
+`u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
@@ -46,7 +48,5 @@ ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
 ar: `u' modifier ignored since `D' is the default (see `U')
-ar: `u' modifier ignored since `D' is the default (see `U')
-ar: `u' modifier ignored since `D' is the default (see `U')
--rw-r--r-- 1 runner runner 32841049 Aug 17 04:23 glibc-x86-64-DEV2026.1.pkg.tar.zst
+-rw-r--r-- 1 runner runner 32842957 Aug 17 06:10 /tmp/tmp.DwmIAXK9XU/glibc-x86-64-DEV2026.1.pkg.tar.zst
 ```
