@@ -1,0 +1,11 @@
+# OPENUI-desktop 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/31993951556
+- 提交: 04fd60bb4adca3fc7b64cb39b370bdb631614068
+- 时间: 2026-08-17T04:21:48Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
