@@ -1,0 +1,11 @@
+# oakctl 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-oakctl
+- 运行: https://github.com/OPENOS-dev/OPENOS-oakctl/actions/runs/31991530868
+- 提交: bc1125a98aadd69a3a095be2160d15a6ea7e5819
+- 时间: 2026-08-17T03:38:41Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
