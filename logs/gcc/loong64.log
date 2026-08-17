@@ -1,0 +1,11 @@
+# gcc 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-gcc
+- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/31993867197
+- 提交: 44e2cac574b55e8b9df20cea0ab7381271cfc3a2
+- 时间: 2026-08-17T04:16:43Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
