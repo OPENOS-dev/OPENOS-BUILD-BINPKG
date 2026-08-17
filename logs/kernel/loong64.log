@@ -1,11 +1,17 @@
 # kernel 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31993863900
-- 提交: 44ecbe47c9edd24e5ef7b8ffe5746b82570290e5
-- 时间: 2026-08-17T04:17:14Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31995152838
+- 提交: cc6b71cd4dc6f4f82f5d2e07f46b33525c09ce2d
+- 时间: 2026-08-17T04:39:20Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+make[2]: loongarch64-linux-gnu-gcc: No such file or directory
+/bin/sh: 1: loongarch64-linux-gnu-gcc: not found
+scripts/Kconfig.include:40: C compiler 'loongarch64-linux-gnu-gcc' not found
+make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/kconfig/Makefile:95: defconfig] Error 1
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:696: defconfig] Error 2
+make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
+make: *** [Makefile:224: __sub-make] Error 2
 ```
