@@ -1,11 +1,12 @@
 # gcc 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-gcc
-- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/31993867197
-- 提交: 44e2cac574b55e8b9df20cea0ab7381271cfc3a2
-- 时间: 2026-08-17T04:16:43Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/32000109718
+- 提交: 5809e71db236974ce1a4e9b464cea00495085c13
+- 时间: 2026-08-17T06:05:29Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+gcc 阶段2 交叉工具链构建预留; 产物为空包 (待接入)
+-rw-r--r-- 1 runner runner 101 Aug 17 06:05 /tmp/tmp.vKjzrtdKm6/gcc-loong64-DEV2026.1.pkg.tar.zst
 ```
