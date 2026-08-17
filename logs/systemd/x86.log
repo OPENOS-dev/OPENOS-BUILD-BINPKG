@@ -1,0 +1,11 @@
+# systemd 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-systemd
+- 运行: https://github.com/OPENOS-dev/OPENOS-systemd/actions/runs/31994615623
+- 提交: 8bc568b2c95531a8fcc7ac7183605c42e610a451
+- 时间: 2026-08-17T04:28:56Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
