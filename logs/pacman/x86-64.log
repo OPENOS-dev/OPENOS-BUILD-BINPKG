@@ -1,0 +1,32 @@
+# pacman 构建失败 (x86-64)
+
+- 仓库: OPENOS-dev/OPENOS-pacman
+- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/31993889559
+- 提交: 3d81531b8b8c097c2fdefddfb7f529a84fc12f46
+- 时间: 2026-08-17T04:17:38Z
+
+## 构建日志尾部
+```
+The Meson build system
+Version: 1.3.2
+Source dir: /tmp/tmp.vipk667tIz/src
+Build dir: /tmp/tmp.vipk667tIz/build
+Build type: native build
+Project name: pacman
+Project version: 7.1.0
+C compiler for the host machine: ccache cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/usr/bin/python3)
+Program bash found: YES (/usr/bin/bash)
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency bash-completion found: YES 2.11
+Run-time dependency intl found: YES
+Found CMake: /usr/local/bin/cmake (3.31.6)
+Run-time dependency libarchive found: NO (tried pkgconfig and cmake)
+
+meson.build:87:13: ERROR: Dependency "libarchive" not found, tried pkgconfig and cmake
+
+A full log can be found at /tmp/tmp.vipk667tIz/build/meson-logs/meson-log.txt
+```
