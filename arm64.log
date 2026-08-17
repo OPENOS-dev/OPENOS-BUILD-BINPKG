@@ -1,15 +1,90 @@
-# kernel 构建失败 (arm64)
+# glibc 构建失败 (arm64)
 
-- 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31991492231
-- 提交: c9c389f0369154f19baab49b149669a65cd3f0ce
-- 时间: 2026-08-17T03:34:36Z
+- 仓库: OPENOS-dev/OPENOS-glibc
+- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31991497702
+- 提交: b27272459760aecb04a1aab05868a5fa05c436ff
+- 时间: 2026-08-17T03:35:01Z
 
 ## 构建日志尾部
 ```
-make[3]: *** No rule to make target 'arch/arm64/kernel/vdso/vdso.lds', needed by 'arch/arm64/kernel/vdso/vdso.so.dbg'.  Stop.
-make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/arch/arm64/Makefile:227: vdso_prepare] Error 2
-make[2]: *** Waiting for unfinished jobs....
-make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
-make: *** [Makefile:224: __sub-make] Error 2
+   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
+      |                                     ^
+../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
+   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
+      |                                     ^~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
+   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
+   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysv/linux/startup.h:34:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
+   34 |       INTERNAL_SYSCALL_CALL (write, STDERR_FILENO, (message),           \
+      |       ^~~~~~~~~~~~~~~~~~~~~
+../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
+   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
+      |   ^~~~~~~~~~~~~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:200:17: error: invalid register name for ‘_x0’
+  200 |   register long _x0 asm ("x0");
+      |                 ^~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:203:3: note: in expansion of macro ‘LOAD_ARGS_0’
+  203 |   LOAD_ARGS_0 ()                                \
+      |   ^~~~~~~~~~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:183:8: note: in expansion of macro ‘LOAD_ARGS_1’
+  183 |        LOAD_ARGS_##nr (args)                                    \
+      |        ^~~~~~~~~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:193:9: note: in expansion of macro ‘INTERNAL_SYSCALL_RAW’
+  193 |         INTERNAL_SYSCALL_RAW(SYS_ify(name), nr, args)
+      |         ^~~~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:37:3: note: in expansion of macro ‘INTERNAL_SYSCALL’
+   37 |   INTERNAL_SYSCALL (name, 1, a1)
+      |   ^~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:30:37: note: in expansion of macro ‘__INTERNAL_SYSCALL1’
+   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
+      |                                     ^
+../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
+   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
+      |                                     ^~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
+   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
+   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysv/linux/startup.h:36:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
+   36 |       INTERNAL_SYSCALL_CALL (exit_group, 127);                          \
+      |       ^~~~~~~~~~~~~~~~~~~~~
+../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
+   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
+      |   ^~~~~~~~~~~~~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:184:22: error: invalid register name for ‘_x8’
+  184 |        register long _x8 asm ("x8") = (name);                   \
+      |                      ^~~
+../sysdeps/unix/sysv/linux/aarch64/sysdep.h:193:9: note: in expansion of macro ‘INTERNAL_SYSCALL_RAW’
+  193 |         INTERNAL_SYSCALL_RAW(SYS_ify(name), nr, args)
+      |         ^~~~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:37:3: note: in expansion of macro ‘INTERNAL_SYSCALL’
+   37 |   INTERNAL_SYSCALL (name, 1, a1)
+      |   ^~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:30:37: note: in expansion of macro ‘__INTERNAL_SYSCALL1’
+   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
+      |                                     ^
+../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
+   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
+      |                                     ^~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
+   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~
+../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
+   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+../sysdeps/unix/sysv/linux/startup.h:36:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
+   36 |       INTERNAL_SYSCALL_CALL (exit_group, 127);                          \
+      |       ^~~~~~~~~~~~~~~~~~~~~
+../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
+   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
+      |   ^~~~~~~~~~~~~~
+make[2]: *** [/tmp/tmp.ngIWu369wu/build/sysd-rules:451: /tmp/tmp.ngIWu369wu/build/csu/libc-tls.o] Error 1
+make[1]: *** [Makefile:488: csu/subdir_lib] Error 2
+make: *** [Makefile:20: all] Error 2
 ```
