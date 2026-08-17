@@ -1,0 +1,11 @@
+# libopenrsa 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-libopenrsa
+- 运行: https://github.com/OPENOS-dev/OPENOS-libopenrsa/actions/runs/31993902971
+- 提交: 200c827a7b402c61141b9a1c9024b16ec3ae2908
+- 时间: 2026-08-17T04:19:20Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
