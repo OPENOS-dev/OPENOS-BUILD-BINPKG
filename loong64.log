@@ -1,9 +1,9 @@
-# oakctl 构建失败 (loong64)
+# openos-settingsd 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-oakctl
-- 运行: https://github.com/OPENOS-dev/OPENOS-oakctl/actions/runs/31991530868
-- 提交: bc1125a98aadd69a3a095be2160d15a6ea7e5819
-- 时间: 2026-08-17T03:38:41Z
+- 仓库: OPENOS-dev/OPENOS-settingsd
+- 运行: https://github.com/OPENOS-dev/OPENOS-settingsd/actions/runs/31991552863
+- 提交: 178311b6c7190aa70c4edbcc4db794dbdcd43db2
+- 时间: 2026-08-17T03:38:44Z
 
 ## 构建日志尾部
 ```
