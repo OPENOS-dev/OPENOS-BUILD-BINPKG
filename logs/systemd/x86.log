@@ -1,11 +1,12 @@
 # systemd 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-systemd
-- 运行: https://github.com/OPENOS-dev/OPENOS-systemd/actions/runs/31994615623
-- 提交: 8bc568b2c95531a8fcc7ac7183605c42e610a451
-- 时间: 2026-08-17T04:28:56Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-systemd/actions/runs/32000172643
+- 提交: 02722d1ad4c2a383c1607321577a900e38b60921
+- 时间: 2026-08-17T06:06:14Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+systemd meson 交叉构建预留; 产物为空包 (待接入)
+-rw-r--r-- 1 runner runner 103 Aug 17 06:06 /tmp/tmp.CSE3oCVXVG/systemd-x86-DEV2026.1.pkg.tar.zst
 ```
