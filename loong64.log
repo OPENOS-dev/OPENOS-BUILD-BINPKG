@@ -1,9 +1,9 @@
-# openos-welcome 构建失败 (loong64)
+# opt 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-welcome
-- 运行: https://github.com/OPENOS-dev/OPENOS-welcome/actions/runs/31991547638
-- 提交: d16fa428384836370ba5df2659681c036ae13694
-- 时间: 2026-08-17T03:35:49Z
+- 仓库: OPENOS-dev/OPENOS-opt
+- 运行: https://github.com/OPENOS-dev/OPENOS-opt/actions/runs/31991562955
+- 提交: 4985a553881d1425a9c7811a71606bd74591efae
+- 时间: 2026-08-17T03:36:13Z
 
 ## 构建日志尾部
 ```
