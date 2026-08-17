@@ -1,9 +1,9 @@
-# glibc 构建失败 (loong64)
+# gcc 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-glibc
-- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31991497702
-- 提交: b27272459760aecb04a1aab05868a5fa05c436ff
-- 时间: 2026-08-17T03:33:05Z
+- 仓库: OPENOS-dev/OPENOS-gcc
+- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/31991495004
+- 提交: 4d419cf519d1a1f337025a08718d06f33a829765
+- 时间: 2026-08-17T03:33:15Z
 
 ## 构建日志尾部
 ```
