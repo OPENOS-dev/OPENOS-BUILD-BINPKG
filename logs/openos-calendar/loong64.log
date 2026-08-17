@@ -1,0 +1,11 @@
+# openos-calendar 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-calendar
+- 运行: https://github.com/OPENOS-dev/OPENOS-calendar/actions/runs/31993928420
+- 提交: 3734f4524d23a48c46f2723fcc1b10195502af08
+- 时间: 2026-08-17T04:20:43Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
