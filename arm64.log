@@ -1,0 +1,11 @@
+# util-linux 构建失败 (arm64)
+
+- 仓库: OPENOS-dev/OPENOS-util-linux
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31991505892
+- 提交: 967fbb815b38d6f6ee37d2e661cbbb67da90dbae
+- 时间: 2026-08-17T03:33:53Z
+
+## 构建日志尾部
+```
+/home/runner/work/_temp/efbddfa7-06a8-41b3-ba84-47cf4a95ad80.sh: line 18: ./configure: No such file or directory
+```
