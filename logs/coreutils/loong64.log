@@ -1,15 +1,12 @@
 # coreutils 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31997762147
-- 提交: 977a978103fd88820412845a4919c19666b75f84
-- 时间: 2026-08-17T05:25:46Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999645898
+- 提交: 80ac555d2675fd4e2ae2ff7aa5dd7cf8ee0807b6
+- 时间: 2026-08-17T05:56:30Z
 
 ## 构建日志尾部
 ```
-/tmp/tmp.Q6c5nALiHE/src/build-aux/missing: line 85: aclocal-1.18: command not found
-WARNING: 'aclocal-1.18' is missing on your system.
-         You should only need it if you modified 'acinclude.m4' or
-         'configure.ac' or m4 files included by 'configure.ac'.
-make: *** [Makefile:9769: aclocal.m4] Error 127
+
+ERROR: Neither source directory '/tmp/tmp.EvvjvjT0mo/build' nor build directory None contain a build file meson.build.
 ```
