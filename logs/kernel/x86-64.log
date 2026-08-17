@@ -1,9 +1,9 @@
 # kernel 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31991492231
-- 提交: c9c389f0369154f19baab49b149669a65cd3f0ce
-- 时间: 2026-08-17T03:35:45Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31993863900
+- 提交: 44ecbe47c9edd24e5ef7b8ffe5746b82570290e5
+- 时间: 2026-08-17T04:19:02Z
 
 ## 构建日志尾部
 ```
@@ -23,6 +23,7 @@ make[6]: *** Waiting for unfinished jobs....
 make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry/vsyscall] Error 2
 make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry/vdso] Error 2
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry] Error 2
+make[4]: *** Waiting for unfinished jobs....
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86] Error 2
 make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1967: .] Error 2
 make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
