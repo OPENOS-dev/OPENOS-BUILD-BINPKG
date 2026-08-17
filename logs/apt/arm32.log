@@ -1,54 +1,12 @@
 # apt 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31995901640
-- 提交: 6819fd8873d28fa8d241b1753d10f14b4fcaf822
-- 时间: 2026-08-17T04:52:20Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31997756521
+- 提交: 7f63632c9759b3c8cd7636d0c78077acb3fef001
+- 时间: 2026-08-17T05:24:58Z
 
 ## 构建日志尾部
 ```
--- Found LFS: TRUE
--- Looking for iconv_open
--- Looking for iconv_open - found
--- Found Iconv: /usr/include
--- Found Perl: /usr/bin/perl (found version "5.38.2")
--- Found Intl: built in to C library
--- Performing Test have-compiler-flag:-Wall
--- Performing Test have-compiler-flag:-Wall - Success
--- Performing Test have-compiler-flag:-Wextra
--- Performing Test have-compiler-flag:-Wextra - Success
--- Performing Test have-compiler-flag:-Wcast-align
--- Performing Test have-compiler-flag:-Wcast-align - Success
--- Performing Test have-compiler-flag:-Wlogical-op
--- Performing Test have-compiler-flag:-Wlogical-op - Success
--- Performing Test have-compiler-flag:-Wredundant-decls
--- Performing Test have-compiler-flag:-Wredundant-decls - Success
--- Performing Test have-compiler-flag:-Wmissing-declarations
--- Performing Test have-compiler-flag:-Wmissing-declarations - Success
--- Performing Test have-compiler-flag:-Wunsafe-loop-optimizations
--- Performing Test have-compiler-flag:-Wunsafe-loop-optimizations - Success
--- Performing Test have-compiler-flag:-Wctor-dtor-privacy
--- Performing Test have-compiler-flag:-Wctor-dtor-privacy - Success
--- Performing Test have-compiler-flag:-Wdisabled-optimization
--- Performing Test have-compiler-flag:-Wdisabled-optimization - Success
--- Performing Test have-compiler-flag:-Winit-self
--- Performing Test have-compiler-flag:-Winit-self - Success
--- Performing Test have-compiler-flag:-Wmissing-include-dirs
--- Performing Test have-compiler-flag:-Wmissing-include-dirs - Success
--- Performing Test have-compiler-flag:-Wnoexcept
--- Performing Test have-compiler-flag:-Wnoexcept - Success
--- Performing Test have-compiler-flag:-Wsign-promo
--- Performing Test have-compiler-flag:-Wsign-promo - Success
--- Performing Test have-compiler-flag:-Wundef
--- Performing Test have-compiler-flag:-Wundef - Success
--- Performing Test have-compiler-flag:-Wdouble-promotion
--- Performing Test have-compiler-flag:-Wdouble-promotion - Success
--- Performing Test have-compiler-flag:-Wsuggest-override
--- Performing Test have-compiler-flag:-Wsuggest-override - Success
--- Performing Test have-compiler-flag:-Werror=suggest-override
--- Performing Test have-compiler-flag:-Werror=suggest-override - Success
--- Performing Test have-compiler-flag:-Werror=return-type
--- Performing Test have-compiler-flag:-Werror=return-type - Success
 -- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS
 -- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS - Success
 -- Found Berkeley: /usr/include
@@ -74,16 +32,58 @@
 --   Found libsystemd, version 255
 -- Found Systemd: /usr/include
 -- Checking for module 'libseccomp'
---   Package 'libseccomp', required by 'virtual:world', not found
--- Could NOT find SECCOMP (missing: SECCOMP_INCLUDE_DIRS SECCOMP_LIBRARIES) 
+--   Found libseccomp, version 2.5.5
+-- Found SECCOMP: /usr/include
 -- Checking for module 'libxxhash'
---   Package 'libxxhash', required by 'virtual:world', not found
-CMake Error at /usr/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:233 (message):
-  Could NOT find XXHASH (missing: XXHASH_INCLUDE_DIRS XXHASH_LIBRARIES)
-Call Stack (most recent call first):
-  /usr/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
-  CMake/FindXXHASH.cmake:23 (find_package_handle_standard_args)
-  CMakeLists.txt:142 (find_package)
+--   Found libxxhash, version 0.8.2
+-- Found XXHASH: /usr/include
+-- Looking for statfs
+-- Looking for statfs - found
+-- Looking for include file sys/params.h
+-- Looking for include file sys/params.h - not found
+-- Looking for statfs
+-- Looking for statfs - not found
+-- Looking for statvfs
+-- Looking for statvfs - found
+-- Performing Test HAVE_STRUCT_STATFS_F_TYPE
+-- Performing Test HAVE_STRUCT_STATFS_F_TYPE - Success
+-- Looking for getresuid
+-- Looking for getresuid - found
+-- Looking for getresgid
+-- Looking for getresgid - found
+-- Looking for setresuid
+-- Looking for setresuid - found
+-- Looking for setresgid
+-- Looking for setresgid - found
+-- Looking for ptsname_r
+-- Looking for ptsname_r - found
+-- Looking for timegm
+-- Looking for timegm - found
+-- Looking for include file machine/endian.h
+-- Looking for include file machine/endian.h - not found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for C++ include sys/types.h
+-- Looking for C++ include sys/types.h - found
+-- Looking for C++ include stdint.h
+-- Looking for C++ include stdint.h - found
+-- Looking for C++ include stddef.h
+-- Looking for C++ include stddef.h - found
+-- Check size of sig_t
+-- Check size of sig_t - done
+-- Check size of sighandler_t
+-- Check size of sighandler_t - done
+-- Looking for res_ninit
+-- Looking for res_ninit - not found
+-- Found dpkg data dir: /usr/share/dpkg
+-- Found root group: root
+-- Detected vendor: ubuntu
+-- Building libapt-pkg 7.0 (release 0)
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+CMake Error at test/libapt/CMakeLists.txt:29 (message):
+  Could not find GTest
 
 
 -- Configuring incomplete, errors occurred!
