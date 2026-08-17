@@ -1,9 +1,9 @@
-# openos-uname 构建失败 (loong64)
+# OPENUI-desktop 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-uname
-- 运行: https://github.com/OPENOS-dev/OPENOS-uname/actions/runs/31991539276
-- 提交: 76e864cd045e28672b106bfbf757ebbe46416cfd
-- 时间: 2026-08-17T03:38:59Z
+- 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/31991565473
+- 提交: d791123f1552e3ce6601d77e13502db2a82d2bad
+- 时间: 2026-08-17T03:39:04Z
 
 ## 构建日志尾部
 ```
