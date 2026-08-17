@@ -1,11 +1,11 @@
 # util-linux 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-util-linux
-- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31993883575
-- 提交: 70a7dc8c3429febd24557c17b0d0a3a508728bdd
-- 时间: 2026-08-17T04:17:33Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31994621334
+- 提交: 3f1c764da38a0d0bde765b01861b3931fe4d0bd9
+- 时间: 2026-08-17T04:29:14Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/_temp/464d67df-dcfe-4d3e-a90a-b9d83d03ba2d.sh: line 18: ./configure: No such file or directory
+(未捕获到日志)
 ```
