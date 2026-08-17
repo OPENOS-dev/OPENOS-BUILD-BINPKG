@@ -1,0 +1,11 @@
+# pacman 构建失败 (arm64)
+
+- 仓库: OPENOS-dev/OPENOS-pacman
+- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/31994627159
+- 提交: 69dca01338fb2b0323762f097f1abfc94a2a5014
+- 时间: 2026-08-17T04:29:15Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
