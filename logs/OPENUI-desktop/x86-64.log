@@ -1,12 +1,14 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32008688809
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32008697023
 - 提交: 9121ff62254dbd78d1bdb1131b9ed26c0ee77da3
-- 时间: 2026-08-17T08:05:47Z
+- 时间: 2026-08-17T08:06:27Z
 
 ## 构建日志尾部
 ```
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency wlroots found: YES 0.17.1
 Run-time dependency wayland-client found: YES 1.22.0
 Run-time dependency wayland-server found: YES 1.22.0
 Run-time dependency wayland-protocols found: YES 1.45
@@ -41,28 +43,28 @@ openos-de DEV2026.1
 
 Found ninja-1.13.2 at /usr/local/bin/ninja
 ninja: Entering directory `/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build'
-[1/28] Generating 'openos-compositor.p/xdg-shell-protocol.c'
-[2/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-protocol.c'
-[3/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-server-protocol.h'
-[4/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-server-protocol.h'
-[5/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-protocol.c'
-[6/28] Generating 'openos-shell.p/moc_shellbackend.cpp'
-[7/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h'
-[8/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-protocol.c'
-[9/28] Generating 'openos-shell.p/moc_waylandbridge.cpp'
-[10/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-client-protocol.h'
-[11/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-protocol.c'
+[1/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-server-protocol.h'
+[2/28] Generating 'openos-compositor.p/xdg-shell-protocol.c'
+[3/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-protocol.c'
+[4/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-server-protocol.h'
+[5/28] Generating 'openos-shell.p/moc_waylandbridge.cpp'
+[6/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-protocol.c'
+[7/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-protocol.c'
+[8/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h'
+[9/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-protocol.c'
+[10/28] Generating 'openos-shell.p/moc_shellbackend.cpp'
+[11/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-client-protocol.h'
 [12/28] Compiling Qt resources qt6-qml_qrc
-[13/28] Compiling C object openos-compositor.p/meson-generated_openos-workspace-unstable-v1-protocol.c.o
-[14/28] Compiling C object openos-compositor.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o
-[15/28] Compiling C object openos-compositor.p/meson-generated_xdg-shell-protocol.c.o
-[16/28] Compiling C object openos-compositor.p/src_blur.c.o
+[13/28] Compiling C object openos-compositor.p/meson-generated_xdg-shell-protocol.c.o
+[14/28] Compiling C object openos-compositor.p/src_blur.c.o
 FAILED: [code=1] openos-compositor.p/src_blur.c.o 
 ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_blur.c.o -MF openos-compositor.p/src_blur.c.o.d -o openos-compositor.p/src_blur.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:12:10: fatal error: wlr/render/wlr_render_pass.h: No such file or directory
    12 | #include <wlr/render/wlr_render_pass.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
+[15/28] Compiling C object openos-compositor.p/meson-generated_openos-workspace-unstable-v1-protocol.c.o
+[16/28] Compiling C object openos-compositor.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o
 [17/28] Compiling C object openos-compositor.p/src_workspace.c.o
 FAILED: [code=1] openos-compositor.p/src_workspace.c.o 
 ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_workspace.c.o -MF openos-compositor.p/src_workspace.c.o.d -o openos-compositor.p/src_workspace.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/workspace.c
@@ -82,8 +84,6 @@ In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/c
       |          ^~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
 [19/28] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
-[20/28] Compiling C++ object openos-shell.p/meson-generated_moc_waylandbridge.cpp.o
-[21/28] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
