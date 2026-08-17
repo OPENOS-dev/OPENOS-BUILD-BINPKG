@@ -1,14 +1,25 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31998799367
-- 提交: ad4c5c389c5ed6e1a94422eb5b4795a97a8b1ba9
-- 时间: 2026-08-17T05:43:32Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31999226513
+- 提交: 63abebd4254967f005151e4510dff247d49dd103
+- 时间: 2026-08-17T05:51:50Z
 
 ## 构建日志尾部
 ```
 make[3]: *** No rule to make target 'scripts/module.lds'.  Stop.
 make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1512: modules_prepare] Error 2
+make[2]: *** Waiting for unfinished jobs....
+ar: usr/initramfs_data.o: No such file or directory
+make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:395: usr/built-in.a] Error 123
+make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: usr] Error 2
+make[3]: *** Waiting for unfinished jobs....
+make[6]: *** No rule to make target 'arch/x86/entry/vdso/vdso32/vdso32.lds', needed by 'arch/x86/entry/vdso/vdso32.so.dbg'.  Stop.
+make[6]: *** Waiting for unfinished jobs....
+make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry/vdso] Error 2
+make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry] Error 2
+make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86] Error 2
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1967: .] Error 2
 make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
 make: *** [Makefile:224: __sub-make] Error 2
 ```
