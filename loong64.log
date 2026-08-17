@@ -1,9 +1,9 @@
-# apt 构建失败 (loong64)
+# util-linux 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31991508450
-- 提交: accfe4cbc0434d66cb967d6186f23bdf448bee2e
-- 时间: 2026-08-17T03:35:33Z
+- 仓库: OPENOS-dev/OPENOS-util-linux
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31991505892
+- 提交: 967fbb815b38d6f6ee37d2e661cbbb67da90dbae
+- 时间: 2026-08-17T03:35:36Z
 
 ## 构建日志尾部
 ```
