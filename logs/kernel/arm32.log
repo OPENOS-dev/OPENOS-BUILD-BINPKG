@@ -1,26 +1,19 @@
 # kernel 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31999226513
-- 提交: 63abebd4254967f005151e4510dff247d49dd103
-- 时间: 2026-08-17T05:50:47Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31999844867
+- 提交: cf30cf812b3615bd106cd34fd8dcfbfa9a035312
+- 时间: 2026-08-17T06:01:08Z
 
 ## 构建日志尾部
 ```
-make[3]: *** No rule to make target 'scripts/module.lds'.  Stop.
-make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1512: modules_prepare] Error 2
-make[2]: *** Waiting for unfinished jobs....
 arm-linux-gnueabihf-ar: usr/initramfs_data.o: No such file or directory
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:395: usr/built-in.a] Error 123
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: usr] Error 2
 make[3]: *** Waiting for unfinished jobs....
-make[5]: *** No rule to make target 'arch/arm/vfp/vfphw.o', needed by 'arch/arm/vfp/built-in.a'.  Stop.
-make[5]: *** Waiting for unfinished jobs....
-make[5]: *** No rule to make target 'arch/arm/vdso/vdso.lds', needed by 'arch/arm/vdso/vdso.so.raw'.  Stop.
-make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/arm/vdso] Error 2
-make[4]: *** Waiting for unfinished jobs....
-make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/arm/vfp] Error 2
-make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/arm] Error 2
+make[3]: *** No rule to make target 'scripts/module.lds'.  Stop.
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1512: modules_prepare] Error 2
+make[2]: *** Waiting for unfinished jobs....
 make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1967: .] Error 2
 make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
 make: *** [Makefile:224: __sub-make] Error 2
