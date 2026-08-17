@@ -1,15 +1,90 @@
 # coreutils 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31997762147
-- 提交: 977a978103fd88820412845a4919c19666b75f84
-- 时间: 2026-08-17T05:25:41Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999075935
+- 提交: 81fdd57a03b5efb374317ad7c1b2ffc366edeb0f
+- 时间: 2026-08-17T05:48:54Z
 
 ## 构建日志尾部
 ```
-/tmp/tmp.XRZRn84JAw/src/build-aux/missing: line 85: aclocal-1.18: command not found
-WARNING: 'aclocal-1.18' is missing on your system.
-         You should only need it if you modified 'acinclude.m4' or
-         'configure.ac' or m4 files included by 'configure.ac'.
-make: *** [Makefile:9769: aclocal.m4] Error 127
+      | ^
+lib/hash.c:327:44: error: unknown type name 'Hash_processor'
+  327 | hash_do_for_each (const Hash_table *table, Hash_processor processor,
+      |                                            ^~~~~~~~~~~~~~
+lib/hash.c:354:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  354 | {
+      | ^
+lib/hash.c:365:8: error: unknown type name 'bool'
+  365 | static bool
+      |        ^~~~
+lib/hash.c:367:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  367 | {
+      | ^
+lib/hash.c:376:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  376 | {
+      | ^
+lib/hash.c:386:8: error: unknown type name 'bool'
+  386 | static bool
+      |        ^~~~
+lib/hash.c:388:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  388 | {
+      | ^
+lib/hash.c:419:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  419 | {
+      | ^
+lib/hash.c:439:18: error: expected declaration specifiers or '...' before 'Hash_hasher'
+  439 |                  Hash_hasher hasher, Hash_comparator comparator,
+      |                  ^~~~~~~~~~~
+lib/hash.c:439:38: error: unknown type name 'Hash_comparator'
+  439 |                  Hash_hasher hasher, Hash_comparator comparator,
+      |                                      ^~~~~~~~~~~~~~~
+lib/hash.c:440:18: error: expected declaration specifiers or '...' before 'Hash_data_freer'
+  440 |                  Hash_data_freer data_freer)
+      |                  ^~~~~~~~~~~~~~~
+lib/hash.c:493:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  493 | {
+      | ^
+lib/hash.c:530:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  530 | {
+      | ^
+lib/hash.c:591:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  591 | {
+      | ^
+lib/hash.c:616:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  616 | {
+      | ^
+lib/hash.c:630:46: error: unknown type name 'bool'
+  630 |             struct hash_entry **bucket_head, bool delete)
+      |                                              ^~~~
+lib/hash.c:630:46: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+lib/hash.c:697:8: error: unknown type name 'bool'
+  697 | static bool
+      |        ^~~~
+lib/hash.c:698:53: error: unknown type name 'bool'
+  698 | transfer_entries (Hash_table *dst, Hash_table *src, bool safe)
+      |                                                     ^~~~
+lib/hash.c:698:53: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+lib/hash.c:772:1: error: unknown type name 'bool'
+  772 | bool
+      | ^~~~
+lib/hash.c:772:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+lib/hash.c:774:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  774 | {
+      | ^
+lib/hash.c:856:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  856 | {
+      | ^
+lib/hash.c:940:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  940 | {
+      | ^
+lib/hash.c:950:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  950 | {
+      | ^
+lib/hash.h:69:15: error: old-style parameter declarations in prototyped function definition
+   69 | extern size_t hash_get_n_buckets (const Hash_table *table)
+      |               ^~~~~~~~~~~~~~~~~~
+lib/hash.c:1031: error: expected '{' at end of input
+make[2]: *** [Makefile:16316: lib/libcoreutils_a-hash.o] Error 1
+make[1]: *** [Makefile:24479: all-recursive] Error 1
+make: *** [Makefile:9733: all] Error 2
 ```
