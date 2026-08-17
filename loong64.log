@@ -1,9 +1,9 @@
-# openos-run 构建失败 (loong64)
+# bash 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-run
-- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/31991557568
-- 提交: f84bedb9cfb1c68e4c17f8753f9f98ffe2752c07
-- 时间: 2026-08-17T03:36:52Z
+- 仓库: OPENOS-dev/OPENOS-bash
+- 运行: https://github.com/OPENOS-dev/OPENOS-bash/actions/runs/31991514530
+- 提交: 4f36e6d1559dc027eb6c67f81337a8659acb1607
+- 时间: 2026-08-17T03:37:28Z
 
 ## 构建日志尾部
 ```
