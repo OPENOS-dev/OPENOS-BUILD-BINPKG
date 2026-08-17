@@ -1,11 +1,90 @@
 # util-linux 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-util-linux
-- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31994621334
-- 提交: 3f1c764da38a0d0bde765b01861b3931fe4d0bd9
-- 时间: 2026-08-17T04:29:26Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/32000077753
+- 提交: 72f440cd74cd66588579782c1b705fdf1267531d
+- 时间: 2026-08-17T06:04:58Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fsck to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/mkfs.minix to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fsck.minix to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/mkfs.cramfs to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fsck.cramfs to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/blockdev to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fdisk to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/sfdisk to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/cfdisk to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/addpart to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/delpart to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/resizepart to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/partx to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/script to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/scriptlive to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/scriptreplay to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/setterm to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/mesg to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/wall to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/write to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/cal to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/logger to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/look to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/mcookie to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/lastlog2 to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completionsmkdir: created directory '/tmp/tmp.PKzfIRLyr3/pkg/usr/share/man'
+mkdir: created directory '/tmp/tmp.PKzfIRLyr3/pkg/usr/share/man/man8'
+Compiling '/tmp/tmp.PKzfIRLyr3/pkg/usr/lib/python3/dist-packages/libmount/__init__.py'...
+
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/namei to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/whereis to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/lslocks to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/lsblk to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/lsfd to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/uuidgen to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/uuidparse to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/uuidd to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/blkid to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/copyfilerange to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/findfs to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/wipefs to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/findmnt to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/rename to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/getopt to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fincore to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/hardlink to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/pipesz to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/fadvise to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/waitpid to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/enosys to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/lsclocks to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/exch to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/getino to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/chrt to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/ionice to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/taskset to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/uclampset to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.PKzfIRLyr3/src/bash-completion/coresched to /tmp/tmp.PKzfIRLyr3/pkg/usr/share/bash-completion/completions
+Installing symlink pointing to libblkid.so.1.1.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libblkid.so.1
+Installing symlink pointing to libblkid.so.1 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libblkid.so
+Installing symlink pointing to libmount.so.1.1.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libmount.so.1
+Installing symlink pointing to libmount.so.1 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libmount.so
+Installing symlink pointing to libsmartcols.so.1.1.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libsmartcols.so.1
+Installing symlink pointing to libsmartcols.so.1 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libsmartcols.so
+Installing symlink pointing to libuuid.so.1.3.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libuuid.so.1
+Installing symlink pointing to libuuid.so.1 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libuuid.so
+Installing symlink pointing to liblastlog2.so.2.0.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/liblastlog2.so.2
+Installing symlink pointing to liblastlog2.so.2 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/liblastlog2.so
+Installing symlink pointing to libfdisk.so.1.1.0 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libfdisk.so.1
+Installing symlink pointing to libfdisk.so.1 to /tmp/tmp.PKzfIRLyr3/pkg/usr/lib/x86_64-linux-gnu/libfdisk.so
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh last /usr/bin/lastb'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh vipw /usr/bin/vigr'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh vipw.8 /usr/share/man/man8/vigr.8'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh setarch /usr/bin/uname26'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh setarch /usr/bin/linux32'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh setarch /usr/bin/linux64'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh setarch /usr/bin/i386'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh setarch /usr/bin/x86_64'
+Running custom install script '/tmp/tmp.PKzfIRLyr3/src/tools/meson-make-symlink.sh last /usr/share/bash-completion/completions/lastb'
+Running custom install script '/usr/bin/python3 /tmp/tmp.PKzfIRLyr3/build/meson-private/pycompile.py python-3.12-installed.json 0'
+-rw-r--r-- 1 runner runner 6153677 Aug 17 06:04 /tmp/tmp.PKzfIRLyr3/util-linux-arm32-DEV2026.1.pkg.tar.zst
 ```
