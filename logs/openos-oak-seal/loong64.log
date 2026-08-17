@@ -1,9 +1,9 @@
-# coreutils 构建失败 (loong64)
+# openos-oak-seal 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31991503125
-- 提交: d04db6d11ed0491dc5703d06d38a78f5cd3af800
-- 时间: 2026-08-17T03:37:29Z
+- 仓库: OPENOS-dev/OPENOS-oak-seal
+- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31993914871
+- 提交: 84a4a0c46c3415c6d9743c4f2506fa19b88cbc60
+- 时间: 2026-08-17T04:21:23Z
 
 ## 构建日志尾部
 ```
