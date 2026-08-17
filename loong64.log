@@ -1,9 +1,9 @@
-# opt 构建失败 (loong64)
+# libopenrsa 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-opt
-- 运行: https://github.com/OPENOS-dev/OPENOS-opt/actions/runs/31991562955
-- 提交: 4985a553881d1425a9c7811a71606bd74591efae
-- 时间: 2026-08-17T03:36:13Z
+- 仓库: OPENOS-dev/OPENOS-libopenrsa
+- 运行: https://github.com/OPENOS-dev/OPENOS-libopenrsa/actions/runs/31991525947
+- 提交: a7139370cadc72cd23c303d63984ee5b56609b6f
+- 时间: 2026-08-17T03:36:20Z
 
 ## 构建日志尾部
 ```
