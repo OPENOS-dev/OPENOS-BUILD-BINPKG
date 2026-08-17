@@ -1,0 +1,11 @@
+# liboak 构建失败 (x86-64)
+
+- 仓库: OPENOS-dev/OPENOS-liboak
+- 运行: https://github.com/OPENOS-dev/OPENOS-liboak/actions/runs/31994634544
+- 提交: fde755626a2c50b69b4d0e96a2413fbda49df0fd
+- 时间: 2026-08-17T04:29:29Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
