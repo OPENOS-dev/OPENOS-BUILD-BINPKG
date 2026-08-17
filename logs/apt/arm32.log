@@ -1,90 +1,90 @@
 # apt 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31998801641
-- 提交: 7bec5ac3652fdb70ce74fc0ba644ff598df77399
-- 时间: 2026-08-17T05:42:27Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31999063068
+- 提交: a3da834edf271278bb5ba9b332b711dd08ef45f3
+- 时间: 2026-08-17T05:47:06Z
 
 ## 构建日志尾部
 ```
--- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS
--- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS - Success
--- Found Berkeley: /usr/include
--- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")
--- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")
--- Found BZip2: /usr/lib/x86_64-linux-gnu/libbz2.so (found version "1.0.8")
--- Looking for BZ2_bzCompressInit
--- Looking for BZ2_bzCompressInit - found
--- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
--- Checking for module 'liblzma'
---   Found liblzma, version 5.4.5
--- Found LZMA: /usr/include
--- Checking for module 'liblz4'
---   Found liblz4, version 1.9.4
--- Found LZ4: /usr/include
--- Checking for module 'libzstd'
---   Found libzstd, version 1.5.5
--- Found ZSTD: /usr/include
--- Checking for module 'libudev'
---   Found libudev, version 255
--- Found Udev: /usr/include
--- Checking for module 'libsystemd'
---   Found libsystemd, version 255
--- Found Systemd: /usr/include
--- Checking for module 'libseccomp'
---   Found libseccomp, version 2.5.5
--- Found SECCOMP: /usr/include
--- Checking for module 'libxxhash'
---   Found libxxhash, version 0.8.2
--- Found XXHASH: /usr/include
--- Looking for statfs
--- Looking for statfs - found
--- Looking for include file sys/params.h
--- Looking for include file sys/params.h - not found
--- Looking for statfs
--- Looking for statfs - not found
--- Looking for statvfs
--- Looking for statvfs - found
--- Performing Test HAVE_STRUCT_STATFS_F_TYPE
--- Performing Test HAVE_STRUCT_STATFS_F_TYPE - Success
--- Looking for getresuid
--- Looking for getresuid - found
--- Looking for getresgid
--- Looking for getresgid - found
--- Looking for setresuid
--- Looking for setresuid - found
--- Looking for setresgid
--- Looking for setresgid - found
--- Looking for ptsname_r
--- Looking for ptsname_r - found
--- Looking for timegm
--- Looking for timegm - found
--- Looking for include file machine/endian.h
--- Looking for include file machine/endian.h - not found
--- Looking for include file sys/endian.h
--- Looking for include file sys/endian.h - not found
--- Looking for include file endian.h
--- Looking for include file endian.h - found
--- Looking for C++ include sys/types.h
--- Looking for C++ include sys/types.h - found
--- Looking for C++ include stdint.h
--- Looking for C++ include stdint.h - found
--- Looking for C++ include stddef.h
--- Looking for C++ include stddef.h - found
--- Check size of sig_t
--- Check size of sig_t - done
--- Check size of sighandler_t
--- Check size of sighandler_t - done
--- Looking for res_ninit
--- Looking for res_ninit - not found
--- Found dpkg data dir: /usr/share/dpkg
--- Found root group: root
--- Detected vendor: ubuntu
--- Building libapt-pkg 7.0 (release 0)
--- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
-CMake Error at test/libapt/CMakeLists.txt:29 (message):
-  Could not find GTest
-
-
--- Configuring incomplete, errors occurred!
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtest.a
+[ 25%] Built target gtest
+[ 37%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_main.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmock.a
+[ 75%] Built target gmock
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_main.a
+[100%] Built target gmock_main
+-- Install configuration: ""
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-more-matchers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/custom
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/custom/gmock-port.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/custom/README.md
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/gmock-port.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/internal/gmock-pp.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-spec-builders.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-matchers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-cardinalities.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-function-mocker.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-more-actions.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-nice-strict.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gmock/gmock-actions.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/libgmock.a
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/libgmock_main.a
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock.pc
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock_main.pc
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-noconfig.cmake
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-noconfig.cmake
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /tmp/tmp.xzpQH7MTEV/pkg/usr/include
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-death-test.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest_pred_impl.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-param-util.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-internal.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/custom
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/custom/gtest-port.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/custom/README.md
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/custom/gtest.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-port.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-filepath.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-port-arch.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-string.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/internal/gtest-type-util.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-printers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-test-part.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-param-test.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-typed-test.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-matchers.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest_prod.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-spi.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-message.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/include/gtest/gtest-assertion-result.h
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/libgtest.a
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/libgtest_main.a
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest.pc
+-- Installing: /tmp/tmp.xzpQH7MTEV/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest_main.pc
+tar (child): apt-arm32-DEV2026.1.pkg.tar.zst: Cannot open: Permission denied
+tar (child): Error is not recoverable: exiting now
+tar: apt-arm32-DEV2026.1.pkg.tar.zst: Cannot write: Broken pipe
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
 ```
