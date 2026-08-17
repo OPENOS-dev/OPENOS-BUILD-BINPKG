@@ -1,0 +1,21 @@
+# coreutils 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-coreutils
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31993879676
+- 提交: 6e1726853f2bf9538a88fbebd260e860211432b8
+- 时间: 2026-08-17T04:21:07Z
+
+## 构建日志尾部
+```
+configure: WARNING: libacl development library was not found or not usable.
+configure: WARNING: GNU coreutils will be built without ACL support.
+configure: WARNING: libattr development library was not found or not usable.
+configure: WARNING: GNU coreutils will be built without xattr support.
+configure: WARNING: libcap library was not found or not usable.
+configure: WARNING: GNU coreutils will be built without capability support.
+/tmp/tmp.QaF9Z2v92T/src/build-aux/missing: line 85: aclocal-1.18: command not found
+WARNING: 'aclocal-1.18' is missing on your system.
+         You should only need it if you modified 'acinclude.m4' or
+         'configure.ac' or m4 files included by 'configure.ac'.
+make: *** [Makefile:9769: aclocal.m4] Error 127
+```
