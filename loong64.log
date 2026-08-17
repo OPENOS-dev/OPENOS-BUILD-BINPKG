@@ -1,9 +1,9 @@
-# util-linux 构建失败 (loong64)
+# openos-welcome 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-util-linux
-- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31991505892
-- 提交: 967fbb815b38d6f6ee37d2e661cbbb67da90dbae
-- 时间: 2026-08-17T03:35:36Z
+- 仓库: OPENOS-dev/OPENOS-welcome
+- 运行: https://github.com/OPENOS-dev/OPENOS-welcome/actions/runs/31991547638
+- 提交: d16fa428384836370ba5df2659681c036ae13694
+- 时间: 2026-08-17T03:35:49Z
 
 ## 构建日志尾部
 ```
