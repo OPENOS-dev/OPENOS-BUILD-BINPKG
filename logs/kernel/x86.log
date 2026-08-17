@@ -1,9 +1,9 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31999844867
-- 提交: cf30cf812b3615bd106cd34fd8dcfbfa9a035312
-- 时间: 2026-08-17T06:02:39Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32000116251
+- 提交: 3ae6291fc009c77f921984f1730b6fb3f9f578a9
+- 时间: 2026-08-17T06:07:28Z
 
 ## 构建日志尾部
 ```
@@ -14,8 +14,6 @@ ar: usr/initramfs_data.o: No such file or directory
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:395: usr/built-in.a] Error 123
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: usr] Error 2
 make[3]: *** Waiting for unfinished jobs....
-make[5]: *** No rule to make target 'arch/x86/entry/entry.o', needed by 'arch/x86/entry/built-in.a'.  Stop.
-make[5]: *** Waiting for unfinished jobs....
 make[6]: *** No rule to make target 'arch/x86/entry/vdso/vdso32/vdso32.lds', needed by 'arch/x86/entry/vdso/vdso32.so.dbg'.  Stop.
 make[6]: *** Waiting for unfinished jobs....
 make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: arch/x86/entry/vdso] Error 2
