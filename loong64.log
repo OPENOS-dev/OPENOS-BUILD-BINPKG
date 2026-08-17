@@ -1,9 +1,9 @@
-# openos-settingsd 构建失败 (loong64)
+# openos-uname 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-settingsd
-- 运行: https://github.com/OPENOS-dev/OPENOS-settingsd/actions/runs/31991552863
-- 提交: 178311b6c7190aa70c4edbcc4db794dbdcd43db2
-- 时间: 2026-08-17T03:38:44Z
+- 仓库: OPENOS-dev/OPENOS-uname
+- 运行: https://github.com/OPENOS-dev/OPENOS-uname/actions/runs/31991539276
+- 提交: 76e864cd045e28672b106bfbf757ebbe46416cfd
+- 时间: 2026-08-17T03:38:59Z
 
 ## 构建日志尾部
 ```
