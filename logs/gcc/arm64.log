@@ -1,11 +1,12 @@
 # gcc 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-gcc
-- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/31994609597
-- 提交: 2b394a7bbc61348c540e8928800763aa88246273
-- 时间: 2026-08-17T04:29:05Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/32000109718
+- 提交: 5809e71db236974ce1a4e9b464cea00495085c13
+- 时间: 2026-08-17T06:06:50Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+gcc 阶段2 交叉工具链构建预留; 产物为空包 (待接入)
+-rw-r--r-- 1 runner runner 102 Aug 17 06:06 /tmp/tmp.mTGVzh7AmT/gcc-arm64-DEV2026.1.pkg.tar.zst
 ```
