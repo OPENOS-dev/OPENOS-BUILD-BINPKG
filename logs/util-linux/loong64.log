@@ -1,0 +1,11 @@
+# util-linux 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-util-linux
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31993883575
+- 提交: 70a7dc8c3429febd24557c17b0d0a3a508728bdd
+- 时间: 2026-08-17T04:18:04Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
