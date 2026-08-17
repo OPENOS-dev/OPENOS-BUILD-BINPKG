@@ -1,0 +1,90 @@
+# bash 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-bash
+- 运行: https://github.com/OPENOS-dev/OPENOS-bash/actions/runs/32000063169
+- 提交: 07f16a22cbb0c397e9524c2a4dbdfabe9faaeb0e
+- 时间: 2026-08-17T06:04:10Z
+
+## 构建日志尾部
+```
+execute_cmd.c:5762:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 5762 |     notfound_str = _("command not found");
+      |                  ^
+print_cmd.c: In function ‘make_command_string_internal’:
+print_cmd.c:181:14: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+  181 |     cprintf ("");
+      |              ^~
+print_cmd.c: In function ‘print_simple_command’:
+print_cmd.c:1007:14: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+ 1007 |     cprintf ("");
+      |              ^~
+./help.def: In function ‘show_manpage’:
+./help.def:313:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  313 |     line = doc ? _(doc[0]) : (char *)NULL;
+      |          ^
+./help.def: In function ‘dispcolumn’:
+./help.def:378:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  378 |   helpdoc = _(shell_builtins[i].short_doc);
+      |           ^
+./help.def:397:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  397 |   helpdoc = _(shell_builtins[i+height].short_doc);
+      |           ^
+./help.def: In function ‘wdispcolumn’:
+./help.def:418:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  418 |   helpdoc = _(shell_builtins[i].short_doc);
+      |           ^
+./help.def:467:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  467 |   helpdoc = _(shell_builtins[i+height].short_doc);
+      |           ^
+./kill.def: In function ‘kill_error’:
+./kill.def:280:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  280 |     x = _("Unknown error");
+      |       ^
+In file included from bashintl.h:30,
+                 from error.c:39:
+error.c: In function ‘command_errstr’:
+./include/gettext.h:46:26: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+bashintl.h:36:25: note: in expansion of macro ‘gettext’
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+error.c:435:11: note: in expansion of macro ‘_’
+  435 |   return (_(cmd_error_table[code]));
+      |           ^
+mailcheck.c: In function ‘check_mail’:
+mailcheck.c:435:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  435 |           message = mailfiles[i]->msg ? mailfiles[i]->msg : _("You have mail in $_");
+      |                   ^
+mailcheck.c:460:21: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  460 |             message = _("You have new mail in $_");
+      |                     ^
+jobs.c: In function ‘printable_job_status’:
+jobs.c:1974:8: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1974 |   temp = _("Done");
+      |        ^
+jobs.c:1979:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1979 |         temp = _("Stopped");
+      |              ^
+jobs.c:1987:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1987 |     temp = _("Running");
+      |          ^
+jobs.c:2009:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 2009 |         temp = _("Unknown status");
+      |              ^
+/usr/local/src/chet/src/bash/src/parse.y: In function ‘report_syntax_error’:
+/usr/local/src/chet/src/bash/src/parse.y:6905:8: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+trap.c: In function ‘signal_name’:
+trap.c:224:7: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  224 |   ret = (sig >= BASH_NSIG || sig < 0 || signal_names[sig] == NULL)
+      |       ^
+redir.c: In function ‘redirection_error’:
+redir.c:146:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  146 |     filename = _("file descriptor out of range");
+      |              ^
+redir.c:194:14: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  194 |     filename = _("file descriptor out of range");
+      |              ^
+/usr/bin/ld: ./lib/sh/libsh.a(tmpfile.o): in function `sh_mktmpname':
+/tmp/tmp.GXWB6zwlVM/src/lib/sh/tmpfile.c:173:(.text+0x198): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+-rw-r--r-- 1 runner runner 3347466 Aug 17 06:04 /tmp/tmp.GXWB6zwlVM/bash-loong64-DEV2026.1.pkg.tar.zst
+```
