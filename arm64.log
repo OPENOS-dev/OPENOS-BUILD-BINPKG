@@ -1,90 +1,28 @@
-# glibc 构建失败 (arm64)
+# liboak 构建失败 (arm64)
 
-- 仓库: OPENOS-dev/OPENOS-glibc
-- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31991497702
-- 提交: b27272459760aecb04a1aab05868a5fa05c436ff
-- 时间: 2026-08-17T03:35:01Z
+- 仓库: OPENOS-dev/OPENOS-liboak
+- 运行: https://github.com/OPENOS-dev/OPENOS-liboak/actions/runs/31991523253
+- 提交: ee96b0ec095d1b6eac41771c083a6264a42f6c67
+- 时间: 2026-08-17T03:35:58Z
 
 ## 构建日志尾部
 ```
-   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
-      |                                     ^
-../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
-   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
-      |                                     ^~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
-   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
-   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysv/linux/startup.h:34:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
-   34 |       INTERNAL_SYSCALL_CALL (write, STDERR_FILENO, (message),           \
-      |       ^~~~~~~~~~~~~~~~~~~~~
-../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
-   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
-      |   ^~~~~~~~~~~~~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:200:17: error: invalid register name for ‘_x0’
-  200 |   register long _x0 asm ("x0");
-      |                 ^~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:203:3: note: in expansion of macro ‘LOAD_ARGS_0’
-  203 |   LOAD_ARGS_0 ()                                \
-      |   ^~~~~~~~~~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:183:8: note: in expansion of macro ‘LOAD_ARGS_1’
-  183 |        LOAD_ARGS_##nr (args)                                    \
-      |        ^~~~~~~~~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:193:9: note: in expansion of macro ‘INTERNAL_SYSCALL_RAW’
-  193 |         INTERNAL_SYSCALL_RAW(SYS_ify(name), nr, args)
-      |         ^~~~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:37:3: note: in expansion of macro ‘INTERNAL_SYSCALL’
-   37 |   INTERNAL_SYSCALL (name, 1, a1)
-      |   ^~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:30:37: note: in expansion of macro ‘__INTERNAL_SYSCALL1’
-   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
-      |                                     ^
-../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
-   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
-      |                                     ^~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
-   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
-   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysv/linux/startup.h:36:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
-   36 |       INTERNAL_SYSCALL_CALL (exit_group, 127);                          \
-      |       ^~~~~~~~~~~~~~~~~~~~~
-../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
-   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
-      |   ^~~~~~~~~~~~~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:184:22: error: invalid register name for ‘_x8’
-  184 |        register long _x8 asm ("x8") = (name);                   \
-      |                      ^~~
-../sysdeps/unix/sysv/linux/aarch64/sysdep.h:193:9: note: in expansion of macro ‘INTERNAL_SYSCALL_RAW’
-  193 |         INTERNAL_SYSCALL_RAW(SYS_ify(name), nr, args)
-      |         ^~~~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:37:3: note: in expansion of macro ‘INTERNAL_SYSCALL’
-   37 |   INTERNAL_SYSCALL (name, 1, a1)
-      |   ^~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:30:37: note: in expansion of macro ‘__INTERNAL_SYSCALL1’
-   30 | #define __SYSCALL_CONCAT_X(a,b)     a##b
-      |                                     ^
-../sysdeps/unix/sysdep.h:31:37: note: in expansion of macro ‘__SYSCALL_CONCAT_X’
-   31 | #define __SYSCALL_CONCAT(a,b)       __SYSCALL_CONCAT_X (a, b)
-      |                                     ^~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:55:3: note: in expansion of macro ‘__SYSCALL_CONCAT’
-   55 |   __SYSCALL_CONCAT (b,__INTERNAL_SYSCALL_NARGS(__VA_ARGS__))(__VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~
-../sysdeps/unix/sysdep.h:61:3: note: in expansion of macro ‘__INTERNAL_SYSCALL_DISP’
-   61 |   __INTERNAL_SYSCALL_DISP (__INTERNAL_SYSCALL, __VA_ARGS__)
-      |   ^~~~~~~~~~~~~~~~~~~~~~~
-../sysdeps/unix/sysv/linux/startup.h:36:7: note: in expansion of macro ‘INTERNAL_SYSCALL_CALL’
-   36 |       INTERNAL_SYSCALL_CALL (exit_group, 127);                          \
-      |       ^~~~~~~~~~~~~~~~~~~~~
-../sysdeps/generic/dl-call_tls_init_tp.h:25:3: note: in expansion of macro ‘_startup_fatal’
-   25 |   _startup_fatal ("Fatal glibc error: Cannot allocate TLS block\n");
-      |   ^~~~~~~~~~~~~~
-make[2]: *** [/tmp/tmp.ngIWu369wu/build/sysd-rules:451: /tmp/tmp.ngIWu369wu/build/csu/libc-tls.o] Error 1
-make[1]: *** [Makefile:488: csu/subdir_lib] Error 2
-make: *** [Makefile:20: all] Error 2
+The Meson build system
+Version: 1.3.2
+Source dir: /home/runner/work/OPENOS-liboak/OPENOS-liboak
+Build dir: /tmp/tmp.ICUO0MgwDC/build
+Build type: native build
+Project name: liboak
+Project version: undefined
+C compiler for the host machine: ccache cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Found CMake: /usr/local/bin/cmake (3.31.6)
+Run-time dependency libsodium found: NO (tried pkgconfig and cmake)
+
+meson.build:4:12: ERROR: Dependency "libsodium" not found, tried pkgconfig and cmake
+
+A full log can be found at /tmp/tmp.ICUO0MgwDC/build/meson-logs/meson-log.txt
 ```
