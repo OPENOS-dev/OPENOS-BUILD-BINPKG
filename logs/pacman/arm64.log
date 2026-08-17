@@ -1,11 +1,90 @@
 # pacman 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-pacman
-- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/31994627159
-- 提交: 69dca01338fb2b0323762f097f1abfc94a2a5014
-- 时间: 2026-08-17T04:29:15Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/32000447857
+- 提交: c831ec3f0dad5e9e7900e75a689cb435a6933e50
+- 时间: 2026-08-17T06:09:35Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+Installing src/pacman/po/sr/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing src/pacman/po/sr@latin/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing src/pacman/po/sv/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing src/pacman/po/tr/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing src/pacman/po/uk/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing src/pacman/po/zh_CN/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing src/pacman/po/zh_TW/LC_MESSAGES/pacman.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing scripts/po/az_AZ/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/az_AZ/LC_MESSAGES
+Installing scripts/po/bg/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing scripts/po/br/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/br/LC_MESSAGES
+Installing scripts/po/ca/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing scripts/po/cs/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing scripts/po/da/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/da/LC_MESSAGES
+Installing scripts/po/de/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/de/LC_MESSAGES
+Installing scripts/po/el/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/el/LC_MESSAGES
+Installing scripts/po/en_GB/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing scripts/po/eo/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing scripts/po/es/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/es/LC_MESSAGES
+Installing scripts/po/es_419/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/es_419/LC_MESSAGES
+Installing scripts/po/eu/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing scripts/po/eu_ES/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/eu_ES/LC_MESSAGES
+Installing scripts/po/fi/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing scripts/po/fr/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing scripts/po/gl/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing scripts/po/hi/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing scripts/po/hu/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing scripts/po/id/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/id/LC_MESSAGES
+Installing scripts/po/it/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/it/LC_MESSAGES
+Installing scripts/po/ja/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing scripts/po/ko/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing scripts/po/lt/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing scripts/po/nb/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing scripts/po/nl/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing scripts/po/pl/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing scripts/po/pt/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing scripts/po/pt_BR/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing scripts/po/ro/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing scripts/po/ru/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing scripts/po/sk/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing scripts/po/sl/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing scripts/po/sr/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing scripts/po/sr@latin/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing scripts/po/sv/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing scripts/po/tr/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing scripts/po/uk/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/uk/LC_MESSAGES'/tmp/tmp.UuiZIWqDx1/pkg/usr/bin/repo-remove' -> 'repo-add'
+'/tmp/tmp.UuiZIWqDx1/pkg/usr/bin/repo-elephant' -> 'repo-add'
+'/tmp/tmp.UuiZIWqDx1/pkg/usr/share/bash-completion/completions/pacman-key' -> 'pacman'
+'/tmp/tmp.UuiZIWqDx1/pkg/usr/share/bash-completion/completions/makepkg' -> 'pacman'
+
+Installing scripts/po/zh_CN/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing scripts/po/zh_TW/LC_MESSAGES/pacman-scripts.mo to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing libalpm.so.16.0.0 to /tmp/tmp.UuiZIWqDx1/pkg/usr/lib/x86_64-linux-gnu
+Installing pacman to /tmp/tmp.UuiZIWqDx1/pkg/usr/bin
+Installing pacman-conf to /tmp/tmp.UuiZIWqDx1/pkg/usr/bin
+Installing testpkg to /tmp/tmp.UuiZIWqDx1/pkg/usr/bin
+Installing vercmp to /tmp/tmp.UuiZIWqDx1/pkg/usr/bin
+Installing /tmp/tmp.UuiZIWqDx1/src/lib/libalpm/alpm.h to /tmp/tmp.UuiZIWqDx1/pkg/usr/include
+Installing /tmp/tmp.UuiZIWqDx1/src/lib/libalpm/alpm_list.h to /tmp/tmp.UuiZIWqDx1/pkg/usr/include
+Installing new directory /tmp/tmp.UuiZIWqDx1/pkg/etc/makepkg.d
+Installing /tmp/tmp.UuiZIWqDx1/build/scripts/libmakepkg.pc to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/pkgconfig
+Installing /tmp/tmp.UuiZIWqDx1/build/meson-private/libalpm.pc to /tmp/tmp.UuiZIWqDx1/pkg/usr/lib/x86_64-linux-gnu/pkgconfig
+Installing /tmp/tmp.UuiZIWqDx1/build/makepkg.conf to /tmp/tmp.UuiZIWqDx1/pkg/etc
+Installing /tmp/tmp.UuiZIWqDx1/build/fortran.conf to /tmp/tmp.UuiZIWqDx1/pkg/etc/makepkg.conf.d
+Installing /tmp/tmp.UuiZIWqDx1/build/rust.conf to /tmp/tmp.UuiZIWqDx1/pkg/etc/makepkg.conf.d
+Installing /tmp/tmp.UuiZIWqDx1/build/pacman.conf to /tmp/tmp.UuiZIWqDx1/pkg/etc
+Installing /tmp/tmp.UuiZIWqDx1/src/proto/PKGBUILD-split.proto to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/pacman
+Installing /tmp/tmp.UuiZIWqDx1/src/proto/PKGBUILD-vcs.proto to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/pacman
+Installing /tmp/tmp.UuiZIWqDx1/src/proto/PKGBUILD.proto to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/pacman
+Installing /tmp/tmp.UuiZIWqDx1/src/proto/proto.install to /tmp/tmp.UuiZIWqDx1/pkg/usr/share/pacman
+Installing symlink pointing to libalpm.so.16.0.0 to /tmp/tmp.UuiZIWqDx1/pkg/usr/lib/x86_64-linux-gnu/libalpm.so.16
+Installing symlink pointing to libalpm.so.16 to /tmp/tmp.UuiZIWqDx1/pkg/usr/lib/x86_64-linux-gnu/libalpm.so
+Running custom install script '/bin/sh /tmp/tmp.UuiZIWqDx1/src/build-aux/meson-make-symlink.sh repo-add /usr/bin/repo-remove'
+Running custom install script '/bin/sh /tmp/tmp.UuiZIWqDx1/src/build-aux/meson-make-symlink.sh repo-add /usr/bin/repo-elephant'
+Running custom install script '/bin/sh /tmp/tmp.UuiZIWqDx1/src/build-aux/meson-make-symlink.sh pacman /usr/share/bash-completion/completions/pacman-key'
+Running custom install script '/bin/sh /tmp/tmp.UuiZIWqDx1/src/build-aux/meson-make-symlink.sh pacman /usr/share/bash-completion/completions/makepkg'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//var/lib/pacman/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//var/cache/pacman/pkg/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//usr/share/makepkg-template/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//usr/share/libalpm/hooks/"'
+-rw-r--r-- 1 runner runner 1160861 Aug 17 06:09 /tmp/tmp.UuiZIWqDx1/pacman-arm64-DEV2026.1.pkg.tar.zst
 ```
