@@ -1,0 +1,11 @@
+# openos-run 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-run
+- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/31993942662
+- 提交: e06cfa99e7befa57c21fc4f7859c8e1a7352625c
+- 时间: 2026-08-17T04:21:34Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
