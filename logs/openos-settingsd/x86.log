@@ -1,0 +1,11 @@
+# openos-settingsd 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-settingsd
+- 运行: https://github.com/OPENOS-dev/OPENOS-settingsd/actions/runs/31994662797
+- 提交: 648c2220af91bb48d7eb9bb000ae987e5ef6988a
+- 时间: 2026-08-17T04:30:17Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
