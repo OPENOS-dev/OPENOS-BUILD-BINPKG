@@ -1,11 +1,12 @@
 # apt 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31994624080
-- 提交: 6a1da608f0d2d99a7e1915b8d024764c8126f4df
-- 时间: 2026-08-17T04:29:34Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31995170546
+- 提交: 47d855434f3f43f865ed5ce0e400123f24e7ddc5
+- 时间: 2026-08-17T04:41:51Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+CMake Error: The source directory "/home/runner/work/OPENOS-apt/OPENOS-apt/triehash" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
 ```
