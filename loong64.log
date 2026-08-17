@@ -1,9 +1,9 @@
-# libopenrsa 构建失败 (loong64)
+# openos-oak-seal 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-libopenrsa
-- 运行: https://github.com/OPENOS-dev/OPENOS-libopenrsa/actions/runs/31991525947
-- 提交: a7139370cadc72cd23c303d63984ee5b56609b6f
-- 时间: 2026-08-17T03:36:20Z
+- 仓库: OPENOS-dev/OPENOS-oak-seal
+- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31991536319
+- 提交: 55f258e20ee7713ce1581ad49b415c926630606c
+- 时间: 2026-08-17T03:36:26Z
 
 ## 构建日志尾部
 ```
