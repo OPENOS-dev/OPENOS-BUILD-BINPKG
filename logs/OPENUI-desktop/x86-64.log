@@ -1,89 +1,89 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32007973049
-- 提交: 52db44be31936d202d0f7f4e2f4800ee2b21a0c1
-- 时间: 2026-08-17T07:56:34Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32008225790
+- 提交: 1b337aa2c5e87e822c2e4b3233744bd36390b999
+- 时间: 2026-08-17T08:00:01Z
 
 ## 构建日志尾部
 ```
-/usr/include/wlr/types/wlr_input_device.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:16:
-/usr/include/wlr/types/wlr_input_device.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:17:
-/usr/include/wlr/types/wlr_keyboard.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:18:
-/usr/include/wlr/types/wlr_output.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:19:
-/usr/include/wlr/types/wlr_output_layout.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:20:
-/usr/include/wlr/types/wlr_scene.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_scene.h:25:
-/usr/include/wlr/render/wlr_renderer.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_scene.h:26:
-/usr/include/wlr/types/wlr_damage_ring.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_scene.h:27:
-/usr/include/wlr/types/wlr_linux_dmabuf_v1.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_linux_dmabuf_v1.h:15:
-/usr/include/wlr/types/wlr_buffer.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_linux_dmabuf_v1.h:16:
-/usr/include/wlr/render/dmabuf.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_linux_dmabuf_v1.h:17:
-/usr/include/wlr/render/drm_format_set.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_scene.h:28:
-/usr/include/wlr/util/addon.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:21:
-/usr/include/wlr/types/wlr_seat.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:22:
-/usr/include/wlr/types/wlr_xcursor_manager.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency wlroots found: YES 0.17.1
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency wayland-server found: YES 1.22.0
+Run-time dependency wayland-protocols found: YES 1.45
+Run-time dependency xkbcommon found: YES 1.6.0
+Run-time dependency pixman-1 found: YES 0.42.2
+Run-time dependency libinput found: YES 1.25.0
+Library m found: YES
+Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, WaylandClient) found: YES 6.4.2 (pkg-config)
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Found CMake: /usr/local/bin/cmake (3.31.6)
+Run-time dependency layershellqt found: NO (tried pkgconfig and cmake)
+Detecting Qt6 tools
+Run-time dependency qt6 (modules: Core) found: YES 6.4.2 (pkg-config)
+Program /usr/lib/qt6/bin/moc found: NO
+Program /usr/lib/qt6/libexec/moc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/moc)
+Program /usr/lib/qt6/bin/uic found: NO
+Program /usr/lib/qt6/libexec/uic found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/uic)
+Program /usr/lib/qt6/bin/rcc found: NO
+Program /usr/lib/qt6/libexec/rcc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/rcc)
+Program /usr/lib/qt6/bin/lrelease found: NO
+Program /usr/lib/qt6/libexec/lrelease found: NO
+Program lrelease6 found: NO
+Program lrelease-qt6 found: NO
+Program lrelease found: NO
+Build targets in project: 3
+
+openos-de DEV2026.1
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+ninja: Entering directory `/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build'
+[1/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-protocol.c'
+[2/28] Generating 'openos-compositor.p/xdg-shell-protocol.c'
+[3/28] Generating 'openos-compositor.p/wlr-layer-shell-unstable-v1-server-protocol.h'
+[4/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-server-protocol.h'
+[5/28] Generating 'openos-shell.p/moc_shellbackend.cpp'
+[6/28] Generating 'openos-compositor.p/openos-workspace-unstable-v1-protocol.c'
+[7/28] Generating 'openos-shell.p/moc_waylandbridge.cpp'
+[8/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-protocol.c'
+[9/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-client-protocol.h'
+[10/28] Generating 'openos-shell.p/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h'
+[11/28] Generating 'openos-shell.p/openos-workspace-unstable-v1-protocol.c'
+[12/28] Compiling Qt resources qt6-qml_qrc
+[13/28] Compiling C object openos-compositor.p/src_blur.c.o
+FAILED: [code=1] openos-compositor.p/src_blur.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_blur.c.o -MF openos-compositor.p/src_blur.c.o.d -o openos-compositor.p/src_blur.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:12:10: fatal error: wlr/render/wlr_render_pass.h: No such file or directory
+   12 | #include <wlr/render/wlr_render_pass.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[14/28] Compiling C object openos-compositor.p/meson-generated_openos-workspace-unstable-v1-protocol.c.o
+[15/28] Compiling C object openos-compositor.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o
+[16/28] Compiling C object openos-compositor.p/meson-generated_xdg-shell-protocol.c.o
+[17/28] Compiling C object openos-compositor.p/src_workspace.c.o
+FAILED: [code=1] openos-compositor.p/src_workspace.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_workspace.c.o -MF openos-compositor.p/src_workspace.c.o.d -o openos-compositor.p/src_workspace.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/workspace.c
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/workspace.c:79:6: error: ‘const struct openos_workspace_handle_v1_interface’ has no member named ‘destroy’
+   79 |     .destroy = handle_destroy,
+      |      ^~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/workspace.c:79:16: warning: excess elements in struct initializer
+   79 |     .destroy = handle_destroy,
+      |                ^~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/workspace.c:79:16: note: (near initialization for ‘handle_impl’)
+[18/28] Compiling C object openos-compositor.p/src_compositor.c.o
+FAILED: [code=1] openos-compositor.p/src_compositor.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_compositor.c.o -MF openos-compositor.p/src_compositor.c.o.d -o openos-compositor.p/src_compositor.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c
 In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:23:
-/usr/include/wlr/types/wlr_xdg_shell.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_xdg_shell.h:13:
-/usr/include/wlr/types/wlr_compositor.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
-In file included from /usr/include/wlr/types/wlr_xdg_shell.h:14:
-/usr/include/wlr/types/wlr_seat.h:6:2: error: #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-    6 | #error "Add -DWLR_USE_UNSTABLE to enable unstable wlroots features"
-      |  ^~~~~
 /usr/include/wlr/types/wlr_xdg_shell.h:16:10: fatal error: xdg-shell-protocol.h: No such file or directory
    16 | #include "xdg-shell-protocol.h"
       |          ^~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-[19/28] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
-[20/28] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
