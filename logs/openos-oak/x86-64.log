@@ -1,0 +1,11 @@
+# openos-oak 构建失败 (x86-64)
+
+- 仓库: OPENOS-dev/OPENOS-OAK
+- 运行: https://github.com/OPENOS-dev/OPENOS-OAK/actions/runs/31994671319
+- 提交: 8a44d3dea86cc374a603288904172933731c4e33
+- 时间: 2026-08-17T04:30:01Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
