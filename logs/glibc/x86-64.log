@@ -1,0 +1,52 @@
+# glibc 构建失败 (x86-64)
+
+- 仓库: OPENOS-dev/OPENOS-glibc
+- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31993872913
+- 提交: 5a4e5ce5d204b22f7b5d087ceab62ddcb87ef658
+- 时间: 2026-08-17T04:25:46Z
+
+## 构建日志尾部
+```
+configure: WARNING: using cross tools not prefixed with host triplet
+plural.y:51.1-7: warning: POSIX Yacc does not support %define [-Wyacc]
+   51 | %define api.pure full
+      | ^~~~~~~
+plural.y:52.1-7: warning: POSIX Yacc does not support %expect [-Wyacc]
+   52 | %expect 7
+      | ^~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+-rw-r--r-- 1 runner runner 32841049 Aug 17 04:23 glibc-x86-64-DEV2026.1.pkg.tar.zst
+```
