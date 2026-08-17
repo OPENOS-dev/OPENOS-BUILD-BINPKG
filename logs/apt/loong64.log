@@ -1,17 +1,21 @@
 # apt 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31999063068
-- 提交: a3da834edf271278bb5ba9b332b711dd08ef45f3
-- 时间: 2026-08-17T05:46:54Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/32000059742
+- 提交: f8943617abe2832827caa2bbd8fc8017b54b6d90
+- 时间: 2026-08-17T06:03:49Z
 
 ## 构建日志尾部
 ```
+    WITH_DOC
+
+
+-- Build files have been written to: /tmp/tmp.rqA9oZaGNN/build
 [ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 [ 25%] Linking CXX static library ../lib/libgtest.a
 [ 25%] Built target gtest
-[ 37%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
-[ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 37%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
 [ 62%] Linking CXX static library ../lib/libgtest_main.a
 [ 62%] Built target gtest_main
 [ 75%] Linking CXX static library ../lib/libgmock.a
@@ -20,71 +24,67 @@
 [100%] Linking CXX static library ../lib/libgmock_main.a
 [100%] Built target gmock_main
 -- Install configuration: ""
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-more-matchers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/gmock-internal-utils.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/custom
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/custom/gmock-port.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/custom/README.md
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/gmock-port.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/internal/gmock-pp.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-spec-builders.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-matchers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-cardinalities.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-function-mocker.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-more-actions.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-nice-strict.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gmock/gmock-actions.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/libgmock.a
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/libgmock_main.a
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock.pc
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock_main.pc
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-noconfig.cmake
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-noconfig.cmake
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /tmp/tmp.9TzT7hgfb1/pkg/usr/include
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-death-test.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest_pred_impl.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-param-util.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-internal.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/custom
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/custom/gtest-printers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/custom/gtest-port.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/custom/README.md
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/custom/gtest.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-port.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-filepath.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-port-arch.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-string.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/internal/gtest-type-util.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-printers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-test-part.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-param-test.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-typed-test.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-matchers.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest_prod.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-spi.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-message.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/include/gtest/gtest-assertion-result.h
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/libgtest.a
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/libgtest_main.a
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest.pc
--- Installing: /tmp/tmp.9TzT7hgfb1/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest_main.pc
-tar (child): apt-loong64-DEV2026.1.pkg.tar.zst: Cannot open: Permission denied
-tar (child): Error is not recoverable: exiting now
-tar: apt-loong64-DEV2026.1.pkg.tar.zst: Cannot write: Broken pipe
-tar: Child returned status 2
-tar: Error is not recoverable: exiting now
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-more-matchers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/custom
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/custom/gmock-port.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/custom/README.md
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/gmock-port.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/internal/gmock-pp.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-spec-builders.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-matchers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-cardinalities.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-function-mocker.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-more-actions.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-nice-strict.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gmock/gmock-actions.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/libgmock.a
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/libgmock_main.a
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock.pc
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gmock_main.pc
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-noconfig.cmake
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-noconfig.cmake
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /tmp/tmp.rqA9oZaGNN/pkg/usr/include
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-death-test.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest_pred_impl.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-param-util.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-internal.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/custom
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/custom/gtest-port.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/custom/README.md
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/custom/gtest.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-port.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-filepath.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-port-arch.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-string.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/internal/gtest-type-util.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-printers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-test-part.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-param-test.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-typed-test.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-matchers.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest_prod.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-spi.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-message.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/include/gtest/gtest-assertion-result.h
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/libgtest.a
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/libgtest_main.a
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest.pc
+-- Installing: /tmp/tmp.rqA9oZaGNN/pkg/usr/lib/x86_64-linux-gnu/pkgconfig/gtest_main.pc
+-rw-r--r-- 1 runner runner 662694 Aug 17 06:03 /tmp/tmp.rqA9oZaGNN/apt-loong64-DEV2026.1.pkg.tar.zst
 ```
