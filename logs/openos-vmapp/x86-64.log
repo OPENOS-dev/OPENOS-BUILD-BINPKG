@@ -1,0 +1,11 @@
+# openos-vmapp 构建失败 (x86-64)
+
+- 仓库: OPENOS-dev/OPENOS-vmapp
+- 运行: https://github.com/OPENOS-dev/OPENOS-vmapp/actions/runs/31994660358
+- 提交: 4ba1200bdfa5e5a977c40f2a0650c4eddac698c1
+- 时间: 2026-08-17T04:29:43Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
