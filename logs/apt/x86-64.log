@@ -1,12 +1,90 @@
 # apt 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31995170546
-- 提交: 47d855434f3f43f865ed5ce0e400123f24e7ddc5
-- 时间: 2026-08-17T04:40:48Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31995901640
+- 提交: 6819fd8873d28fa8d241b1753d10f14b4fcaf822
+- 时间: 2026-08-17T04:52:30Z
 
 ## 构建日志尾部
 ```
-CMake Error: The source directory "/home/runner/work/OPENOS-apt/OPENOS-apt/triehash" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
+-- Found LFS: TRUE
+-- Looking for iconv_open
+-- Looking for iconv_open - found
+-- Found Iconv: /usr/include
+-- Found Perl: /usr/bin/perl (found version "5.38.2")
+-- Found Intl: built in to C library
+-- Performing Test have-compiler-flag:-Wall
+-- Performing Test have-compiler-flag:-Wall - Success
+-- Performing Test have-compiler-flag:-Wextra
+-- Performing Test have-compiler-flag:-Wextra - Success
+-- Performing Test have-compiler-flag:-Wcast-align
+-- Performing Test have-compiler-flag:-Wcast-align - Success
+-- Performing Test have-compiler-flag:-Wlogical-op
+-- Performing Test have-compiler-flag:-Wlogical-op - Success
+-- Performing Test have-compiler-flag:-Wredundant-decls
+-- Performing Test have-compiler-flag:-Wredundant-decls - Success
+-- Performing Test have-compiler-flag:-Wmissing-declarations
+-- Performing Test have-compiler-flag:-Wmissing-declarations - Success
+-- Performing Test have-compiler-flag:-Wunsafe-loop-optimizations
+-- Performing Test have-compiler-flag:-Wunsafe-loop-optimizations - Success
+-- Performing Test have-compiler-flag:-Wctor-dtor-privacy
+-- Performing Test have-compiler-flag:-Wctor-dtor-privacy - Success
+-- Performing Test have-compiler-flag:-Wdisabled-optimization
+-- Performing Test have-compiler-flag:-Wdisabled-optimization - Success
+-- Performing Test have-compiler-flag:-Winit-self
+-- Performing Test have-compiler-flag:-Winit-self - Success
+-- Performing Test have-compiler-flag:-Wmissing-include-dirs
+-- Performing Test have-compiler-flag:-Wmissing-include-dirs - Success
+-- Performing Test have-compiler-flag:-Wnoexcept
+-- Performing Test have-compiler-flag:-Wnoexcept - Success
+-- Performing Test have-compiler-flag:-Wsign-promo
+-- Performing Test have-compiler-flag:-Wsign-promo - Success
+-- Performing Test have-compiler-flag:-Wundef
+-- Performing Test have-compiler-flag:-Wundef - Success
+-- Performing Test have-compiler-flag:-Wdouble-promotion
+-- Performing Test have-compiler-flag:-Wdouble-promotion - Success
+-- Performing Test have-compiler-flag:-Wsuggest-override
+-- Performing Test have-compiler-flag:-Wsuggest-override - Success
+-- Performing Test have-compiler-flag:-Werror=suggest-override
+-- Performing Test have-compiler-flag:-Werror=suggest-override - Success
+-- Performing Test have-compiler-flag:-Werror=return-type
+-- Performing Test have-compiler-flag:-Werror=return-type - Success
+-- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS
+-- Performing Test have-compiler-flag:-Wp,-D_GLIBCXX_ASSERTIONS - Success
+-- Found Berkeley: /usr/include
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")
+-- Found BZip2: /usr/lib/x86_64-linux-gnu/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'liblzma'
+--   Found liblzma, version 5.4.5
+-- Found LZMA: /usr/include
+-- Checking for module 'liblz4'
+--   Found liblz4, version 1.9.4
+-- Found LZ4: /usr/include
+-- Checking for module 'libzstd'
+--   Found libzstd, version 1.5.5
+-- Found ZSTD: /usr/include
+-- Checking for module 'libudev'
+--   Found libudev, version 255
+-- Found Udev: /usr/include
+-- Checking for module 'libsystemd'
+--   Found libsystemd, version 255
+-- Found Systemd: /usr/include
+-- Checking for module 'libseccomp'
+--   Package 'libseccomp', required by 'virtual:world', not found
+-- Could NOT find SECCOMP (missing: SECCOMP_INCLUDE_DIRS SECCOMP_LIBRARIES) 
+-- Checking for module 'libxxhash'
+--   Package 'libxxhash', required by 'virtual:world', not found
+CMake Error at /usr/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:233 (message):
+  Could NOT find XXHASH (missing: XXHASH_INCLUDE_DIRS XXHASH_LIBRARIES)
+Call Stack (most recent call first):
+  /usr/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
+  CMake/FindXXHASH.cmake:23 (find_package_handle_standard_args)
+  CMakeLists.txt:142 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
 ```
