@@ -1,9 +1,9 @@
-# gcc 构建失败 (loong64)
+# kernel 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-gcc
-- 运行: https://github.com/OPENOS-dev/OPENOS-gcc/actions/runs/31991495004
-- 提交: 4d419cf519d1a1f337025a08718d06f33a829765
-- 时间: 2026-08-17T03:33:15Z
+- 仓库: OPENOS-dev/OPENOS-kernel
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31991492231
+- 提交: c9c389f0369154f19baab49b149669a65cd3f0ce
+- 时间: 2026-08-17T03:33:49Z
 
 ## 构建日志尾部
 ```
