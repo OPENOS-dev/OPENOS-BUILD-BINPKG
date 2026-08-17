@@ -1,11 +1,11 @@
-# util-linux 构建失败 (arm64)
+# pacman 构建失败 (arm64)
 
-- 仓库: OPENOS-dev/OPENOS-util-linux
-- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31991505892
-- 提交: 967fbb815b38d6f6ee37d2e661cbbb67da90dbae
-- 时间: 2026-08-17T03:33:53Z
+- 仓库: OPENOS-dev/OPENOS-pacman
+- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/31991511430
+- 提交: 07a729872154a6d1b190c5c3f14a7fbda4560e1d
+- 时间: 2026-08-17T03:34:32Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/_temp/efbddfa7-06a8-41b3-ba84-47cf4a95ad80.sh: line 18: ./configure: No such file or directory
+/home/runner/work/_temp/24fb2117-adde-4a38-8ba9-9311dc0dae42.sh: line 18: ./configure: No such file or directory
 ```
