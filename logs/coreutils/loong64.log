@@ -1,9 +1,9 @@
 # coreutils 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31993879676
-- 提交: 6e1726853f2bf9538a88fbebd260e860211432b8
-- 时间: 2026-08-17T04:18:52Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31994619007
+- 提交: 739452f2aa794d7aa0122b096b86b27abc1342c9
+- 时间: 2026-08-17T04:29:45Z
 
 ## 构建日志尾部
 ```
