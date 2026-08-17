@@ -1,11 +1,90 @@
 # util-linux 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-util-linux
-- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/31993883575
-- 提交: 70a7dc8c3429febd24557c17b0d0a3a508728bdd
-- 时间: 2026-08-17T04:18:04Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-util-linux/actions/runs/32000077753
+- 提交: 72f440cd74cd66588579782c1b705fdf1267531d
+- 时间: 2026-08-17T06:04:51Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fsck to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/mkfs.minix to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fsck.minix to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/mkfs.cramfs to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fsck.cramfs to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/blockdev to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fdisk to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/sfdisk to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/cfdisk to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/addpart to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/delpart to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/resizepart to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/partx to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/script to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/scriptlive to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/scriptreplay to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/setterm to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/mesg to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/wall to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/write to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/cal to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/logger to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/look to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/mcookie to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/lastlog2 to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completionsmkdir: created directory '/tmp/tmp.l2jgiaAqdg/pkg/usr/share/man'
+mkdir: created directory '/tmp/tmp.l2jgiaAqdg/pkg/usr/share/man/man8'
+Compiling '/tmp/tmp.l2jgiaAqdg/pkg/usr/lib/python3/dist-packages/libmount/__init__.py'...
+
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/namei to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/whereis to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/lslocks to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/lsblk to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/lsfd to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/uuidgen to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/uuidparse to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/uuidd to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/blkid to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/copyfilerange to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/findfs to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/wipefs to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/findmnt to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/rename to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/getopt to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fincore to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/hardlink to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/pipesz to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/fadvise to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/waitpid to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/enosys to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/lsclocks to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/exch to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/getino to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/chrt to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/ionice to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/taskset to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/uclampset to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing /tmp/tmp.l2jgiaAqdg/src/bash-completion/coresched to /tmp/tmp.l2jgiaAqdg/pkg/usr/share/bash-completion/completions
+Installing symlink pointing to libblkid.so.1.1.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libblkid.so.1
+Installing symlink pointing to libblkid.so.1 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libblkid.so
+Installing symlink pointing to libmount.so.1.1.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libmount.so.1
+Installing symlink pointing to libmount.so.1 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libmount.so
+Installing symlink pointing to libsmartcols.so.1.1.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libsmartcols.so.1
+Installing symlink pointing to libsmartcols.so.1 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libsmartcols.so
+Installing symlink pointing to libuuid.so.1.3.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libuuid.so.1
+Installing symlink pointing to libuuid.so.1 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libuuid.so
+Installing symlink pointing to liblastlog2.so.2.0.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/liblastlog2.so.2
+Installing symlink pointing to liblastlog2.so.2 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/liblastlog2.so
+Installing symlink pointing to libfdisk.so.1.1.0 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libfdisk.so.1
+Installing symlink pointing to libfdisk.so.1 to /tmp/tmp.l2jgiaAqdg/pkg/usr/lib/x86_64-linux-gnu/libfdisk.so
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh last /usr/bin/lastb'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh vipw /usr/bin/vigr'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh vipw.8 /usr/share/man/man8/vigr.8'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh setarch /usr/bin/uname26'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh setarch /usr/bin/linux32'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh setarch /usr/bin/linux64'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh setarch /usr/bin/i386'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh setarch /usr/bin/x86_64'
+Running custom install script '/tmp/tmp.l2jgiaAqdg/src/tools/meson-make-symlink.sh last /usr/share/bash-completion/completions/lastb'
+Running custom install script '/usr/bin/python3 /tmp/tmp.l2jgiaAqdg/build/meson-private/pycompile.py python-3.12-installed.json 0'
+-rw-r--r-- 1 runner runner 6153518 Aug 17 06:04 /tmp/tmp.l2jgiaAqdg/util-linux-loong64-DEV2026.1.pkg.tar.zst
 ```
