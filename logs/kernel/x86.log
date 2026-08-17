@@ -1,9 +1,9 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31997750732
-- 提交: fd370eb34a3b755a3e49f0f04ca2a79d3f160ba4
-- 时间: 2026-08-17T05:25:31Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31998799367
+- 提交: ad4c5c389c5ed6e1a94422eb5b4795a97a8b1ba9
+- 时间: 2026-08-17T05:43:32Z
 
 ## 构建日志尾部
 ```
