@@ -1,9 +1,9 @@
-# kernel 构建失败 (loong64)
+# liboak 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31991492231
-- 提交: c9c389f0369154f19baab49b149669a65cd3f0ce
-- 时间: 2026-08-17T03:33:49Z
+- 仓库: OPENOS-dev/OPENOS-liboak
+- 运行: https://github.com/OPENOS-dev/OPENOS-liboak/actions/runs/31991523253
+- 提交: ee96b0ec095d1b6eac41771c083a6264a42f6c67
+- 时间: 2026-08-17T03:34:51Z
 
 ## 构建日志尾部
 ```
