@@ -1,11 +1,90 @@
 # openos-oak-seal 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-oak-seal
-- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31994645681
-- 提交: 55d7b28d65e2070857fe6b10b8f567b7cff31639
-- 时间: 2026-08-17T04:30:08Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/32000123995
+- 提交: 6d80c6ad008c4af5d89602ee7080bfcbbc2948ef
+- 时间: 2026-08-17T06:06:19Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+Project name: openos-oak-seal
+Project version: undefined
+C compiler for the host machine: ccache cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency openssl found: YES 3.0.13
+Build targets in project: 1
+
+openos-oak-seal undefined
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+ninja: Entering directory `/tmp/tmp.0e1UWD9zIr/build'
+[1/2] Compiling C object openos-oak-seal.p/openos-oak-seal.c.o
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c: In function ‘main’:
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:308:22: warning: passing argument 1 of ‘put_le32’ makes pointer from integer without a cast [-Wint-conversion]
+  308 |         put_le32(seal.version, 1);
+      |                  ~~~~^~~~~~~~
+      |                      |
+      |                      uint32_t {aka unsigned int}
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:73:31: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t’ {aka ‘unsigned int’}
+   73 | static void put_le32(uint8_t *p, uint32_t v)
+      |                      ~~~~~~~~~^
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:260:17: warning: unused variable ‘c’ [-Wunused-variable]
+  260 |         int fd, c;
+      |                 ^
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:260:13: warning: unused variable ‘fd’ [-Wunused-variable]
+  260 |         int fd, c;
+      |             ^~
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:309:13: warning: using dangling pointer ‘vmlinuz’ to ‘uname_r’ [-Wdangling-pointer=]
+  309 |         if (sha256_file(vmlinuz, seal.kernel_hash, &seal.kernel_len) != 0) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:300:22: note: ‘uname_r’ declared here
+  300 |                 char uname_r[64];
+      |                      ^~~~~~~
+In function ‘sha256_file’,
+    inlined from ‘main’ at ../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:309:6:
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:91:19: warning: using a dangling pointer to ‘uname_r’ [-Wdangling-pointer=]
+   91 |         FILE *f = fopen(path, "rb");
+      |                   ^~~~~~~~~~~~~~~~~
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c: In function ‘main’:
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:300:22: note: ‘uname_r’ declared here
+  300 |                 char uname_r[64];
+      |                      ^~~~~~~
+In function ‘sha256_file’,
+    inlined from ‘main’ at ../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:309:6:
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:97:19: warning: using a dangling pointer to ‘uname_r’ [-Wdangling-pointer=]
+   97 |         if (!f) { perror(path); return -1; }
+      |                   ^~~~~~~~~~~~
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c: In function ‘main’:
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:300:22: note: ‘uname_r’ declared here
+  300 |                 char uname_r[64];
+      |                      ^~~~~~~
+../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:303:66: warning: ‘%s’ directive output may be truncated writing up to 64 bytes into a region of size 50 [-Wformat-truncation=]
+  303 |                 snprintf(uname_r, sizeof uname_r, "/boot/vmlinuz-%s", un.release);
+      |                                                                  ^~   ~~~~~~~~~~
+In file included from /usr/include/stdio.h:980,
+                 from /usr/include/openssl/evp.h:22,
+                 from ../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:42:
+In function ‘snprintf’,
+    inlined from ‘main’ at ../../../home/runner/work/OPENOS-oak-seal/OPENOS-oak-seal/openos-oak-seal.c:303:3:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:54:10: note: ‘__builtin___snprintf_chk’ output between 15 and 79 bytes into a destination of size 64
+   54 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   55 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+[2/2] Linking target openos-oak-seal
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.0e1UWD9zIr/build
+ninja: Entering directory `/tmp/tmp.0e1UWD9zIr/build'
+ninja: no work to do.
+Installing openos-oak-seal to /tmp/tmp.0e1UWD9zIr/pkg/usr/bin
+-rw-r--r-- 1 runner runner 3364 Aug 17 06:06 /tmp/tmp.0e1UWD9zIr/openos-oak-seal-loong64-DEV2026.1.pkg.tar.zst
 ```
