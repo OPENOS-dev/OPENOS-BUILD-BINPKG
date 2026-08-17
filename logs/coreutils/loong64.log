@@ -1,12 +1,12 @@
 # coreutils 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999645898
-- 提交: 80ac555d2675fd4e2ae2ff7aa5dd7cf8ee0807b6
-- 时间: 2026-08-17T05:56:30Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/32000106685
+- 提交: 7f6f867e0104819ad1ced59b88a826432f062870
+- 时间: 2026-08-17T06:04:35Z
 
 ## 构建日志尾部
 ```
 
-ERROR: Neither source directory '/tmp/tmp.EvvjvjT0mo/build' nor build directory None contain a build file meson.build.
+ERROR: Neither source directory '/tmp/tmp.UrUdrlEeoV/build' nor build directory None contain a build file meson.build.
 ```
