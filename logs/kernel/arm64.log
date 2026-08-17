@@ -1,9 +1,9 @@
 # kernel 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31995152838
-- 提交: cc6b71cd4dc6f4f82f5d2e07f46b33525c09ce2d
-- 时间: 2026-08-17T04:41:44Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31995899393
+- 提交: 80a269fd70a989f2687fbde0f199941a7a9f0e25
+- 时间: 2026-08-17T04:53:28Z
 
 ## 构建日志尾部
 ```
