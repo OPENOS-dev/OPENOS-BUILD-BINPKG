@@ -1,0 +1,36 @@
+# oakctl 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-oakctl
+- 运行: https://github.com/OPENOS-dev/OPENOS-oakctl/actions/runs/32000150815
+- 提交: 45792a0ea9fffefc3072d379c5467ea51dd19d80
+- 时间: 2026-08-17T06:05:17Z
+
+## 构建日志尾部
+```
+The Meson build system
+Version: 1.3.2
+Source dir: /home/runner/work/OPENOS-oakctl/OPENOS-oakctl
+Build dir: /tmp/tmp.Oq5n0ceyTL/build
+Build type: native build
+Project name: oakctl
+Project version: undefined
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Build targets in project: 0
+
+oakctl undefined
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+ninja: Entering directory `/tmp/tmp.Oq5n0ceyTL/build'
+ninja: no work to do.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.Oq5n0ceyTL/build
+ninja: Entering directory `/tmp/tmp.Oq5n0ceyTL/build'
+ninja: no work to do.
+Installing /home/runner/work/OPENOS-oakctl/OPENOS-oakctl/oakctl.sh to /tmp/tmp.Oq5n0ceyTL/pkg/usr/bin
+-rw-r--r-- 1 runner runner 1507 Aug 17 06:05 /tmp/tmp.Oq5n0ceyTL/oakctl-x86-DEV2026.1.pkg.tar.zst
+```
