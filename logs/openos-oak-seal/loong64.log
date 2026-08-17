@@ -1,9 +1,9 @@
 # openos-oak-seal 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-oak-seal
-- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31993914871
-- 提交: 84a4a0c46c3415c6d9743c4f2506fa19b88cbc60
-- 时间: 2026-08-17T04:21:23Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31994645681
+- 提交: 55d7b28d65e2070857fe6b10b8f567b7cff31639
+- 时间: 2026-08-17T04:30:08Z
 
 ## 构建日志尾部
 ```
