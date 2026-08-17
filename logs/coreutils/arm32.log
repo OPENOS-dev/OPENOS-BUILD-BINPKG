@@ -1,90 +1,12 @@
 # coreutils 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999075935
-- 提交: 81fdd57a03b5efb374317ad7c1b2ffc366edeb0f
-- 时间: 2026-08-17T05:49:15Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999645898
+- 提交: 80ac555d2675fd4e2ae2ff7aa5dd7cf8ee0807b6
+- 时间: 2026-08-17T05:56:25Z
 
 ## 构建日志尾部
 ```
-   36 |   {"help", no_argument, NULL, 'h'},
-      |   ^
-lib/long-options.c:36:3: note: (near initialization for 'long_options')
-lib/long-options.c:36:4: warning: initialization of 'const struct option *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
-   36 |   {"help", no_argument, NULL, 'h'},
-      |    ^~~~~~
-lib/long-options.c:36:4: note: (near initialization for 'long_options')
-lib/long-options.c:36:12: warning: excess elements in scalar initializer
-   36 |   {"help", no_argument, NULL, 'h'},
-      |            ^~~~~~~~~~~
-lib/long-options.c:36:12: note: (near initialization for 'long_options')
-lib/long-options.c:36:25: warning: excess elements in scalar initializer
-   36 |   {"help", no_argument, NULL, 'h'},
-      |                         ^~~~
-lib/long-options.c:36:25: note: (near initialization for 'long_options')
-lib/long-options.c:36:31: warning: excess elements in scalar initializer
-   36 |   {"help", no_argument, NULL, 'h'},
-      |                               ^~~
-lib/long-options.c:36:31: note: (near initialization for 'long_options')
-lib/long-options.c:37:3: warning: braces around scalar initializer
-   37 |   {"version", no_argument, NULL, 'v'},
-      |   ^
-lib/long-options.c:37:3: note: (near initialization for 'long_options')
-lib/long-options.c:37:4: warning: initialization of 'const struct option *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
-   37 |   {"version", no_argument, NULL, 'v'},
-      |    ^~~~~~~~~
-lib/long-options.c:37:4: note: (near initialization for 'long_options')
-lib/long-options.c:37:15: warning: excess elements in scalar initializer
-   37 |   {"version", no_argument, NULL, 'v'},
-      |               ^~~~~~~~~~~
-lib/long-options.c:37:15: note: (near initialization for 'long_options')
-lib/long-options.c:37:28: warning: excess elements in scalar initializer
-   37 |   {"version", no_argument, NULL, 'v'},
-      |                            ^~~~
-lib/long-options.c:37:28: note: (near initialization for 'long_options')
-lib/long-options.c:37:34: warning: excess elements in scalar initializer
-   37 |   {"version", no_argument, NULL, 'v'},
-      |                                  ^~~
-lib/long-options.c:37:34: note: (near initialization for 'long_options')
-lib/long-options.c:37:3: warning: excess elements in scalar initializer
-   37 |   {"version", no_argument, NULL, 'v'},
-      |   ^
-lib/long-options.c:37:3: note: (near initialization for 'long_options')
-lib/long-options.c:38:3: warning: braces around scalar initializer
-   38 |   {NULL, 0, NULL, 0}
-      |   ^
-lib/long-options.c:38:3: note: (near initialization for 'long_options')
-lib/long-options.c:38:10: warning: excess elements in scalar initializer
-   38 |   {NULL, 0, NULL, 0}
-      |          ^
-lib/long-options.c:38:10: note: (near initialization for 'long_options')
-lib/long-options.c:38:13: warning: excess elements in scalar initializer
-   38 |   {NULL, 0, NULL, 0}
-      |             ^~~~
-lib/long-options.c:38:13: note: (near initialization for 'long_options')
-lib/long-options.c:38:19: warning: excess elements in scalar initializer
-   38 |   {NULL, 0, NULL, 0}
-      |                   ^
-lib/long-options.c:38:19: note: (near initialization for 'long_options')
-lib/long-options.c:38:3: warning: excess elements in scalar initializer
-   38 |   {NULL, 0, NULL, 0}
-      |   ^
-lib/long-options.c:38:3: note: (near initialization for 'long_options')
-lib/long-options.c:52:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   52 | {
-      | ^
-lib/long-options.c:103:34: error: unknown type name 'bool'
-  103 |                                  bool scan_all,
-      |                                  ^~~~
-lib/long-options.c:33:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
-   32 | #include "exitfail.h"
-  +++ |+#include <stdbool.h>
-   33 | 
-lib/version-etc.h:70:13: error: old-style parameter declarations in prototyped function definition
-   70 | extern void version_etc (FILE *stream,
-      |             ^~~~~~~~~~~
-lib/long-options.c:140: error: expected '{' at end of input
-make[2]: *** [Makefile:16946: lib/libcoreutils_a-long-options.o] Error 1
-make[1]: *** [Makefile:24479: all-recursive] Error 1
-make: *** [Makefile:9733: all] Error 2
+
+ERROR: Neither source directory '/tmp/tmp.VEbDXejija/build' nor build directory None contain a build file meson.build.
 ```
