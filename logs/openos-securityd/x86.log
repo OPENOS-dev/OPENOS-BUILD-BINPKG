@@ -1,0 +1,11 @@
+# openos-securityd 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-securityd
+- 运行: https://github.com/OPENOS-dev/OPENOS-securityd/actions/runs/31994665670
+- 提交: d38ac0daa2e46cc96d2ff4a44c0245cde5b0be12
+- 时间: 2026-08-17T04:29:55Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
