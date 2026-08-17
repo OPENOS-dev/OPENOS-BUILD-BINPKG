@@ -1,16 +1,16 @@
 # openos-run 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-run
-- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/32006455365
-- 提交: 51a747219d0d3dfae893dee86c031687c2ecb59f
-- 时间: 2026-08-17T07:35:39Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/32006708887
+- 提交: cff4f4ea08aabd78865bf903b0b1eb4bd44509c7
+- 时间: 2026-08-17T07:39:10Z
 
 ## 构建日志尾部
 ```
 The Meson build system
 Version: 1.3.2
 Source dir: /home/runner/work/OPENOS-run/OPENOS-run
-Build dir: /tmp/tmp.thQdfPDUhg/build
+Build dir: /tmp/tmp.5HMuShbXEf/build
 Build type: native build
 Project name: openos-run
 Project version: DEV2026.1
@@ -42,24 +42,20 @@ openos-run DEV2026.1
     prefix   : /usr
 
 Found ninja-1.13.2 at /usr/local/bin/ninja
-ninja: Entering directory `/tmp/tmp.thQdfPDUhg/build'
-[1/5] Compiling Qt resources qt6-qml_qrc
-[2/5] Compiling C++ object openos-run.p/meson-generated_.._qt6-qml_qrc.cpp.o
-[3/5] Compiling C++ object openos-run.p/main.cpp.o
-[4/5] Compiling C++ object openos-run.p/apps.cpp.o
-[5/5] Linking target openos-run
-FAILED: [code=1] openos-run 
-c++  -o openos-run openos-run.p/meson-generated_.._qt6-qml_qrc.cpp.o openos-run.p/main.cpp.o openos-run.p/apps.cpp.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,--start-group /usr/lib/x86_64-linux-gnu/libQt6Core.so /usr/lib/x86_64-linux-gnu/libQt6Gui.so /usr/lib/x86_64-linux-gnu/libQt6Qml.so /usr/lib/x86_64-linux-gnu/libQt6Network.so /usr/lib/x86_64-linux-gnu/libQt6Quick.so /usr/lib/x86_64-linux-gnu/libQt6QmlModels.so /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so -Wl,--end-group
-/usr/bin/ld: openos-run.p/main.cpp.o: in function `main.cold':
-main.cpp:(.text.unlikely+0xb): undefined reference to `vtable for AppLauncher'
-/usr/bin/ld: main.cpp:(.text.unlikely+0x23): undefined reference to `vtable for AppsModel'
-/usr/bin/ld: openos-run.p/main.cpp.o: in function `main':
-main.cpp:(.text.startup+0x179): undefined reference to `vtable for AppsModel'
-/usr/bin/ld: main.cpp:(.text.startup+0x1b3): undefined reference to `vtable for AppLauncher'
-/usr/bin/ld: main.cpp:(.text.startup+0x2f9): undefined reference to `vtable for AppLauncher'
-/usr/bin/ld: main.cpp:(.text.startup+0x311): undefined reference to `vtable for AppsModel'
-collect2: error: ld returned 1 exit status
+ninja: Entering directory `/tmp/tmp.5HMuShbXEf/build'
+[1/7] Generating 'openos-run.p/moc_apps.cpp'
+[2/7] Compiling Qt resources qt6-qml_qrc
+[3/7] Compiling C++ object openos-run.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[4/7] Compiling C++ object openos-run.p/apps.cpp.o
+FAILED: [code=1] openos-run.p/apps.cpp.o 
+ccache c++ -Iopenos-run.p -I. -I../../../home/runner/work/OPENOS-run/OPENOS-run -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtQml -I/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -I/usr/include/x86_64-linux-gnu/qt6/QtNetwork -I/usr/include/x86_64-linux-gnu/qt6/QtQuick -I/usr/include/x86_64-linux-gnu/qt6/QtQmlModels -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -DQT_QUICK_LIB -DQT_QMLMODELS_LIB -DQT_OPENGL_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB -fPIC -MD -MQ openos-run.p/apps.cpp.o -MF openos-run.p/apps.cpp.o.d -o openos-run.p/apps.cpp.o -c ../../../home/runner/work/OPENOS-run/OPENOS-run/apps.cpp
+../../../home/runner/work/OPENOS-run/OPENOS-run/apps.cpp:67:10: fatal error: apps.moc: No such file or directory
+   67 | #include "apps.moc"   // Qt moc: AppsModel/AppLauncher 的 Q_OBJECT vtable
+      |          ^~~~~~~~~~
+compilation terminated.
+[5/7] Compiling C++ object openos-run.p/main.cpp.o
+[6/7] Compiling C++ object openos-run.p/meson-generated_moc_apps.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
-INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.thQdfPDUhg/build
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.5HMuShbXEf/build
 ```
