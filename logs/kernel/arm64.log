@@ -1,11 +1,14 @@
 # kernel 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31994606490
-- 提交: bf766c3f0f874fce660486cc87cf859a50687c9f
-- 时间: 2026-08-17T04:29:39Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31995152838
+- 提交: cc6b71cd4dc6f4f82f5d2e07f46b33525c09ce2d
+- 时间: 2026-08-17T04:41:44Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+make[3]: *** No rule to make target 'arch/arm64/kernel/vdso/vdso.lds', needed by 'arch/arm64/kernel/vdso/vdso.so.dbg'.  Stop.
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/arch/arm64/Makefile:227: vdso_prepare] Error 2
+make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
+make: *** [Makefile:224: __sub-make] Error 2
 ```
