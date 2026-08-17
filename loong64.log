@@ -1,9 +1,9 @@
-# systemd 构建失败 (loong64)
+# apt 构建失败 (loong64)
 
-- 仓库: OPENOS-dev/OPENOS-systemd
-- 运行: https://github.com/OPENOS-dev/OPENOS-systemd/actions/runs/31991500583
-- 提交: a4701b2d05f31f96b1ec8c20ee3feb837236f8fd
-- 时间: 2026-08-17T03:35:11Z
+- 仓库: OPENOS-dev/OPENOS-apt
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31991508450
+- 提交: accfe4cbc0434d66cb967d6186f23bdf448bee2e
+- 时间: 2026-08-17T03:35:33Z
 
 ## 构建日志尾部
 ```
