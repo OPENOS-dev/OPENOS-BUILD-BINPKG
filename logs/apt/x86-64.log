@@ -1,9 +1,9 @@
 # apt 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-apt
-- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31997756521
-- 提交: 7f63632c9759b3c8cd7636d0c78077acb3fef001
-- 时间: 2026-08-17T05:24:41Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-apt/actions/runs/31998801641
+- 提交: 7bec5ac3652fdb70ce74fc0ba644ff598df77399
+- 时间: 2026-08-17T05:42:21Z
 
 ## 构建日志尾部
 ```
