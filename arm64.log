@@ -1,11 +1,15 @@
-# pacman 构建失败 (arm64)
+# kernel 构建失败 (arm64)
 
-- 仓库: OPENOS-dev/OPENOS-pacman
-- 运行: https://github.com/OPENOS-dev/OPENOS-pacman/actions/runs/31991511430
-- 提交: 07a729872154a6d1b190c5c3f14a7fbda4560e1d
-- 时间: 2026-08-17T03:34:32Z
+- 仓库: OPENOS-dev/OPENOS-kernel
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31991492231
+- 提交: c9c389f0369154f19baab49b149669a65cd3f0ce
+- 时间: 2026-08-17T03:34:36Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/_temp/24fb2117-adde-4a38-8ba9-9311dc0dae42.sh: line 18: ./configure: No such file or directory
+make[3]: *** No rule to make target 'arch/arm64/kernel/vdso/vdso.lds', needed by 'arch/arm64/kernel/vdso/vdso.so.dbg'.  Stop.
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/arch/arm64/Makefile:227: vdso_prepare] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
+make: *** [Makefile:224: __sub-make] Error 2
 ```
