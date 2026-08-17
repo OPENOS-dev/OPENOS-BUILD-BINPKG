@@ -1,0 +1,12 @@
+# glibc 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-glibc
+- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/31993872913
+- 提交: 5a4e5ce5d204b22f7b5d087ceab62ddcb87ef658
+- 时间: 2026-08-17T04:17:19Z
+
+## 构建日志尾部
+```
+configure: WARNING: using cross tools not prefixed with host triplet
+configure: error: "CET is only supported on x86_64 or x32"
+```
