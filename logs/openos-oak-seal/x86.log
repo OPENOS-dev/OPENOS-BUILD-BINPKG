@@ -1,0 +1,11 @@
+# openos-oak-seal 构建失败 (x86)
+
+- 仓库: OPENOS-dev/OPENOS-oak-seal
+- 运行: https://github.com/OPENOS-dev/OPENOS-oak-seal/actions/runs/31994645681
+- 提交: 55d7b28d65e2070857fe6b10b8f567b7cff31639
+- 时间: 2026-08-17T04:30:03Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
