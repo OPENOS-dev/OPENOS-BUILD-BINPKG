@@ -1,0 +1,11 @@
+# libvmapp 构建失败 (loong64)
+
+- 仓库: OPENOS-dev/OPENOS-libvmapp
+- 运行: https://github.com/OPENOS-dev/OPENOS-libvmapp/actions/runs/31993905988
+- 提交: a9413927bb773d2946901c31ef4e332c0c264197
+- 时间: 2026-08-17T04:21:04Z
+
+## 构建日志尾部
+```
+(未捕获到日志)
+```
