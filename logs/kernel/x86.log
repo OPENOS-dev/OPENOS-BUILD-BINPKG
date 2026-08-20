@@ -1,14 +1,30 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32319563868
-- 提交: 03deee61560000b92d945dc8bc075c78244605d6
-- 时间: 2026-08-20T01:04:54Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32320120050
+- 提交: 921e14230e8a5b3a324f306cc3cbc2682ba7c1d1
+- 时间: 2026-08-20T01:17:07Z
 
 ## 构建日志尾部
 ```
-make[3]: *** No rule to make target 'scripts/module.lds'.  Stop.
-make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1512: modules_prepare] Error 2
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_derive_key’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:460:41: error: unused variable ‘ctx’ [-Werror=unused-variable]
+  460 |         struct sha256_ctx { u32 s[8]; } ctx = { .s = {0x6a09e667, 0xbb67ae85,
+      |                                         ^~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_subjects_write’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:967:1: error: the frame size of 3656 bytes is larger than 1024 bytes [-Werror=frame-larger-than=]
+  967 | }
+      | ^
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_handshake_write’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:1023:1: error: the frame size of 8316 bytes is larger than 1024 bytes [-Werror=frame-larger-than=]
+ 1023 | }
+      | ^
+cc1: all warnings being treated as errors
+make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_lsm.o] Error 1
+make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
+make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security] Error 2
+make[3]: *** Waiting for unfinished jobs....
+make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1967: .] Error 2
 make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
 make: *** [Makefile:224: __sub-make] Error 2
 ```
