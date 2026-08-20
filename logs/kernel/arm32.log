@@ -1,20 +1,14 @@
 # kernel 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/31999844867
-- 提交: cf30cf812b3615bd106cd34fd8dcfbfa9a035312
-- 时间: 2026-08-17T06:01:08Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32319563868
+- 提交: 03deee61560000b92d945dc8bc075c78244605d6
+- 时间: 2026-08-20T01:04:27Z
 
 ## 构建日志尾部
 ```
-arm-linux-gnueabihf-ar: usr/initramfs_data.o: No such file or directory
-make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:395: usr/built-in.a] Error 123
-make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: usr] Error 2
-make[3]: *** Waiting for unfinished jobs....
 make[3]: *** No rule to make target 'scripts/module.lds'.  Stop.
 make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1512: modules_prepare] Error 2
-make[2]: *** Waiting for unfinished jobs....
-make[2]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:1967: .] Error 2
 make[1]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/Makefile:224: __sub-make] Error 2
 make: *** [Makefile:224: __sub-make] Error 2
 ```
