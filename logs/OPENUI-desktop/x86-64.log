@@ -1,9 +1,9 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32322212664
-- 提交: 5c48b1ee86471c9c343b7f1ca9b63349ed884e57
-- 时间: 2026-08-20T01:46:46Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32369985257
+- 提交: 6c6bd12c8d03201de94eb5f76ff85972c225481c
+- 时间: 2026-08-20T12:40:09Z
 
 ## 构建日志尾部
 ```
@@ -29,25 +29,11 @@ Run-time dependency xkbcommon found: YES 1.6.0
 Run-time dependency pixman-1 found: YES 0.42.2
 Run-time dependency libinput found: YES 1.25.0
 Library m found: YES
-Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, WaylandClient) found: YES 6.4.2 (pkg-config)
-Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
-Found CMake: /usr/local/bin/cmake (3.31.6)
-Run-time dependency layershellqt found: NO (tried pkgconfig and cmake)
-Detecting Qt6 tools
-Run-time dependency qt6 (modules: Core) found: YES 6.4.2 (pkg-config)
-Program /usr/lib/qt6/bin/moc found: NO
-Program /usr/lib/qt6/libexec/moc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/moc)
-Program /usr/lib/qt6/bin/uic found: NO
-Program /usr/lib/qt6/libexec/uic found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/uic)
-Program /usr/lib/qt6/bin/rcc found: NO
-Program /usr/lib/qt6/libexec/rcc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/rcc)
-Program /usr/lib/qt6/bin/lrelease found: NO
-Program /usr/lib/qt6/libexec/lrelease found: NO
-Program lrelease6 found: NO
-Program lrelease-qt6 found: NO
-Program lrelease found: NO
+qmake6 found: YES (/usr/bin/qmake6) 6.4.2
+Could not find: Svg Qt6Svg in /usr/lib/x86_64-linux-gnu
+Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, Svg, WaylandClient) found: NO (tried pkgconfig and config-tool)
 
-meson.build:71:16: ERROR: Unable to parse resource file /home/runner/work/OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/shell/qml/qml.qrc
+meson.build:18:11: ERROR: Dependency "qt6" not found, tried pkgconfig and config-tool
 
 A full log can be found at /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build/meson-logs/meson-log.txt
 ```
