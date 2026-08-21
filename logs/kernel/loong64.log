@@ -1,9 +1,9 @@
 # kernel 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32447332565
-- 提交: f6e9a0cd849376fedf36527b9a81b50b58367387
-- 时间: 2026-08-21T04:34:25Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32448578230
+- 提交: de499246caf05680192a507e5cbc8c7869e4cfd8
+- 时间: 2026-08-21T04:55:37Z
 
 ## 构建日志尾部
 ```
