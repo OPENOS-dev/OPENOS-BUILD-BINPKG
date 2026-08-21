@@ -1,37 +1,19 @@
 # kernel 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32454269829
-- 提交: 292053fd19635bfa6ca8d3aafc7ca1dacf9e3a8a
-- 时间: 2026-08-21T06:46:13Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32472180977
+- 提交: 004bd84c0d17326a8c9ee62c9710f9da40d9ee48
+- 时间: 2026-08-21T10:49:03Z
 
 ## 构建日志尾部
 ```
 kernel/bpf/core.o: warning: objtool: ___bpf_prog_run+0x44: sibling call from callable instruction with modified stack frame
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:299:5: warning: no previous prototype for ‘openos_vmapp_init’ [-Wmissing-prototypes]
-  299 | int openos_vmapp_init(void) { return vmapp_init(); }
-      |     ^~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:300:6: warning: no previous prototype for ‘openos_vmapp_exit’ [-Wmissing-prototypes]
-  300 | void openos_vmapp_exit(void) { misc_deregister(&vmapp_dev); }
-      |      ^~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_ioctl’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:270:1: warning: the frame size of 4992 bytes is larger than 2048 bytes [-Wframe-larger-than=]
-  270 | }
-      | ^
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c: In function ‘oak_devkey_generate’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:52:34: warning: unused variable ‘req’ [-Wunused-variable]
-   52 |         struct akcipher_request *req;
-      |                                  ^~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c: At top level:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:147:5: warning: no previous prototype for ‘openos_oak_devicekey_init’ [-Wmissing-prototypes]
-  147 | int openos_oak_devicekey_init(struct proc_dir_entry *oak_proc_root)
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:145:5: warning: no previous prototype for ‘openos_oak_devicekey_init’ [-Wmissing-prototypes]
+  145 | int openos_oak_devicekey_init(struct proc_dir_entry *oak_proc_root)
       |     ^~~~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:168:6: warning: no previous prototype for ‘openos_oak_devicekey_exit’ [-Wmissing-prototypes]
-  168 | void openos_oak_devicekey_exit(struct proc_dir_entry *oak_proc_root)
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:166:6: warning: no previous prototype for ‘openos_oak_devicekey_exit’ [-Wmissing-prototypes]
+  166 | void openos_oak_devicekey_exit(struct proc_dir_entry *oak_proc_root)
       |      ^~~~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:38:15: warning: ‘oak_dev_privkey_len’ defined but not used [-Wunused-variable]
-   38 | static size_t oak_dev_privkey_len;
-      |               ^~~~~~~~~~~~~~~~~~~
 In file included from /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/include/uapi/linux/netfilter_ipv4/ipt_ECN.h:14,
                  from /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/net/ipv4/netfilter/ipt_ECN.c:17:
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/include/uapi/linux/netfilter/xt_DSCP.h:14:10: fatal error: linux/netfilter/xt_dscp.h: No such file or directory
