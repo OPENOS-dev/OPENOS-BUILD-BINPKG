@@ -1,9 +1,9 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32369985257
-- 提交: 6c6bd12c8d03201de94eb5f76ff85972c225481c
-- 时间: 2026-08-20T12:40:09Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32434603255
+- 提交: c6b92de41a50dfa3021622527232dcfc29146de2
+- 时间: 2026-08-21T00:58:26Z
 
 ## 构建日志尾部
 ```
