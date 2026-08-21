@@ -1,46 +1,55 @@
 # kernel 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32447332565
-- 提交: f6e9a0cd849376fedf36527b9a81b50b58367387
-- 时间: 2026-08-21T04:39:51Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32448578230
+- 提交: de499246caf05680192a507e5cbc8c7869e4cfd8
+- 时间: 2026-08-21T05:02:19Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:41:5: warning: no previous prototype for ‘openrsa_ms’ [-Wmissing-prototypes]
-   41 | s64 openrsa_ms(void)
-      |     ^~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:100:5: warning: no previous prototype for ‘openrsa_handshake’ [-Wmissing-prototypes]
-  100 | int openrsa_handshake(const u8 *client_data, size_t len,
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:83:12: warning: ‘openrsa_handshake’ defined but not used [-Wunused-function]
+   83 | static int openrsa_handshake(const u8 *client_data, size_t len,
+      |            ^~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:299:5: warning: no previous prototype for ‘openos_vmapp_init’ [-Wmissing-prototypes]
+  299 | int openos_vmapp_init(void) { return vmapp_init(); }
       |     ^~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:65:12: warning: ‘openrsa_sha256’ defined but not used [-Wunused-function]
-   65 | static int openrsa_sha256(const void *data, unsigned int len, u8 out[32])
-      |            ^~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_check_name’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:77:22: error: implicit declaration of function ‘isalnum’ [-Werror=implicit-function-declaration]
-   77 |                 if (!isalnum(*p) && *p != '_' && *p != '-')
-      |                      ^~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:46:1: note: include ‘<ctype.h>’ or provide a declaration of ‘isalnum’
-   45 | #include <linux/version.h>
-  +++ |+#include <ctype.h>
-   46 | 
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_ioctl’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:236:22: error: implicit declaration of function ‘ksys_unshare’ [-Werror=implicit-function-declaration]
-  236 |                 rc = ksys_unshare(CLONE_NEWNS);
-      |                      ^~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: At top level:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:297:5: warning: no previous prototype for ‘openos_vmapp_init’ [-Wmissing-prototypes]
-  297 | int openos_vmapp_init(void) { return vmapp_init(); }
-      |     ^~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:298:6: warning: no previous prototype for ‘openos_vmapp_exit’ [-Wmissing-prototypes]
-  298 | void openos_vmapp_exit(void) { misc_deregister(&vmapp_dev); }
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:300:6: warning: no previous prototype for ‘openos_vmapp_exit’ [-Wmissing-prototypes]
+  300 | void openos_vmapp_exit(void) { misc_deregister(&vmapp_dev); }
       |      ^~~~~~~~~~~~~~~~~
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_ioctl’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:268:1: warning: the frame size of 4992 bytes is larger than 2048 bytes [-Wframe-larger-than=]
-  268 | }
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:270:1: warning: the frame size of 4992 bytes is larger than 2048 bytes [-Wframe-larger-than=]
+  270 | }
       | ^
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c: In function ‘oak_devkey_generate’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:62:37: error: ‘struct akcipher_alg’ has no member named ‘keygen’
+   62 |         if (crypto_akcipher_alg(tfm)->keygen) {
+      |                                     ^~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:64:23: error: implicit declaration of function ‘crypto_alloc_rng’; did you mean ‘crypto_alloc_comp’? [-Werror=implicit-function-declaration]
+   64 |                 rng = crypto_alloc_rng("stdrng", 0, 0);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       crypto_alloc_comp
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:64:21: warning: assignment to ‘struct crypto_akcipher_rng *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   64 |                 rng = crypto_alloc_rng("stdrng", 0, 0);
+      |                     ^
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:70:17: error: implicit declaration of function ‘crypto_free_rng’; did you mean ‘crypto_free_tfm’? [-Werror=implicit-function-declaration]
+   70 |                 crypto_free_rng(rng);
+      |                 ^~~~~~~~~~~~~~~
+      |                 crypto_free_tfm
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:52:34: warning: unused variable ‘req’ [-Wunused-variable]
+   52 |         struct akcipher_request *req;
+      |                                  ^~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c: At top level:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:163:5: warning: no previous prototype for ‘openos_oak_devicekey_init’ [-Wmissing-prototypes]
+  163 | int openos_oak_devicekey_init(struct proc_dir_entry *oak_proc_root)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:184:6: warning: no previous prototype for ‘openos_oak_devicekey_exit’ [-Wmissing-prototypes]
+  184 | void openos_oak_devicekey_exit(struct proc_dir_entry *oak_proc_root)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_devicekey.c:38:15: warning: ‘oak_dev_privkey_len’ defined but not used [-Wunused-variable]
+   38 | static size_t oak_dev_privkey_len;
+      |               ^~~~~~~~~~~~~~~~~~~
 cc1: some warnings being treated as errors
-make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/vmapp.o] Error 1
+make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_devicekey.o] Error 1
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security] Error 2
 make[3]: *** Waiting for unfinished jobs....
