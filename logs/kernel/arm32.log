@@ -1,32 +1,15 @@
 # kernel 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32320120050
-- 提交: 921e14230e8a5b3a324f306cc3cbc2682ba7c1d1
-- 时间: 2026-08-20T01:17:57Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32445525954
+- 提交: 7b3ea293fe006ff5932a6ec979249629ea2831c2
+- 时间: 2026-08-21T04:09:05Z
 
 ## 构建日志尾部
 ```
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_derive_key’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:460:41: warning: unused variable ‘ctx’ [-Wunused-variable]
-  460 |         struct sha256_ctx { u32 s[8]; } ctx = { .s = {0x6a09e667, 0xbb67ae85,
-      |                                         ^~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_subjects_write’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:915:13: warning: ‘strcmp’ of a string of length 8 and an array of size 8 evaluates to nonzero [-Wstring-compare]
-  915 |         if (strcmp(op, "register") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:960:13: warning: ‘strcmp’ of a string of length 10 and an array of size 8 evaluates to nonzero [-Wstring-compare]
-  960 |         if (strcmp(op, "unregister") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:967:1: warning: the frame size of 3624 bytes is larger than 1024 bytes [-Wframe-larger-than=]
-  967 | }
-      | ^
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_handshake_write’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:999:13: warning: ‘strcmp’ of a string of length 9 and an array of size 8 evaluates to nonzero [-Wstring-compare]
-  999 |         if (strcmp(op, "challenge") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:1023:1: warning: the frame size of 8304 bytes is larger than 1024 bytes [-Wframe-larger-than=]
- 1023 | }
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:478:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+  478 | }
       | ^
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c: In function ‘oak_sha256’:
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c:107:9: error: implicit declaration of function ‘SHASH_DESC_ZERO_CLEAR’ [-Werror=implicit-function-declaration]
