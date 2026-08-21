@@ -1,35 +1,22 @@
 # kernel 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32320120050
-- 提交: 921e14230e8a5b3a324f306cc3cbc2682ba7c1d1
-- 时间: 2026-08-20T01:17:46Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32445525954
+- 提交: 7b3ea293fe006ff5932a6ec979249629ea2831c2
+- 时间: 2026-08-21T04:10:06Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_derive_key’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:460:41: error: unused variable ‘ctx’ [-Werror=unused-variable]
-  460 |         struct sha256_ctx { u32 s[8]; } ctx = { .s = {0x6a09e667, 0xbb67ae85,
-      |                                         ^~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_subjects_write’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:915:13: error: ‘strcmp’ of a string of length 8 and an array of size 8 evaluates to nonzero [-Werror=string-compare]
-  915 |         if (strcmp(op, "register") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:960:13: error: ‘strcmp’ of a string of length 10 and an array of size 8 evaluates to nonzero [-Werror=string-compare]
-  960 |         if (strcmp(op, "unregister") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:967:1: error: the frame size of 3632 bytes is larger than 2048 bytes [-Werror=frame-larger-than=]
-  967 | }
-      | ^
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_handshake_write’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:999:13: error: ‘strcmp’ of a string of length 9 and an array of size 8 evaluates to nonzero [-Werror=string-compare]
-  999 |         if (strcmp(op, "challenge") == 0) {
-      |             ^~~~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:1023:1: error: the frame size of 8304 bytes is larger than 2048 bytes [-Werror=frame-larger-than=]
- 1023 | }
-      | ^
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c: In function ‘oak_sha256’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c:107:9: error: implicit declaration of function ‘SHASH_DESC_ZERO_CLEAR’ [-Werror=implicit-function-declaration]
+  107 |         SHASH_DESC_ZERO_CLEAR(desc);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c: At top level:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c:211:13: error: no previous prototype for ‘openos_oak_early_init’ [-Werror=missing-prototypes]
+  211 | void __init openos_oak_early_init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
-make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_lsm.o] Error 1
+make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_early.o] Error 1
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security] Error 2
 make[3]: *** Waiting for unfinished jobs....
