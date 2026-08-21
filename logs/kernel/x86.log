@@ -1,15 +1,15 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32448578230
-- 提交: de499246caf05680192a507e5cbc8c7869e4cfd8
-- 时间: 2026-08-21T04:58:53Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32449807296
+- 提交: 774efa0d9790889e444b3daf759810f854647d8e
+- 时间: 2026-08-21T05:19:42Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:83:12: error: ‘openrsa_handshake’ defined but not used [-Werror=unused-function]
-   83 | static int openrsa_handshake(const u8 *client_data, size_t len,
-      |            ^~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:52:12: error: ‘openrsa_ts_input’ defined but not used [-Werror=unused-function]
+   52 | static int openrsa_ts_input(const u8 *data, size_t len, s64 ms,
+      |            ^~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_rsa.o] Error 1
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
