@@ -1,21 +1,15 @@
 # kernel 构建失败 (x86)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32447332565
-- 提交: f6e9a0cd849376fedf36527b9a81b50b58367387
-- 时间: 2026-08-21T04:37:12Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32448578230
+- 提交: de499246caf05680192a507e5cbc8c7869e4cfd8
+- 时间: 2026-08-21T04:58:53Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:41:5: error: no previous prototype for ‘openrsa_ms’ [-Werror=missing-prototypes]
-   41 | s64 openrsa_ms(void)
-      |     ^~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:100:5: error: no previous prototype for ‘openrsa_handshake’ [-Werror=missing-prototypes]
-  100 | int openrsa_handshake(const u8 *client_data, size_t len,
-      |     ^~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:65:12: error: ‘openrsa_sha256’ defined but not used [-Werror=unused-function]
-   65 | static int openrsa_sha256(const void *data, unsigned int len, u8 out[32])
-      |            ^~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:83:12: error: ‘openrsa_handshake’ defined but not used [-Werror=unused-function]
+   83 | static int openrsa_handshake(const u8 *client_data, size_t len,
+      |            ^~~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_rsa.o] Error 1
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
