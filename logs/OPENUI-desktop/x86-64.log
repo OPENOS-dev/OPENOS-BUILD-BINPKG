@@ -1,82 +1,12 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32447315020
-- 提交: 136b5be7b0ffb38f68ef2a6b2cde5c7c000be3db
-- 时间: 2026-08-21T04:33:26Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32448230605
+- 提交: ff876db7e99461adcfe27335696b015af4938376
+- 时间: 2026-08-21T04:48:56Z
 
 ## 构建日志尾部
 ```
-  131 | bool wlr_buffer_begin_data_ptr_access(struct wlr_buffer *buffer, uint32_t flags,
-      |                                                                  ~~~~~~~~~^~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:190:55: warning: passing argument 3 of ‘wlr_buffer_begin_data_ptr_access’ from incompatible pointer type [-Wincompatible-pointer-types]
-  190 |     if (!wlr_buffer_begin_data_ptr_access(buf, &data, &fmt, &stride)) {
-      |                                                       ^~~~
-      |                                                       |
-      |                                                       uint32_t * {aka unsigned int *}
-/usr/include/wlr/types/wlr_buffer.h:132:16: note: expected ‘void **’ but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
-  132 |         void **data, uint32_t *format, size_t *stride);
-      |         ~~~~~~~^~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:190:61: warning: passing argument 4 of ‘wlr_buffer_begin_data_ptr_access’ from incompatible pointer type [-Wincompatible-pointer-types]
-  190 |     if (!wlr_buffer_begin_data_ptr_access(buf, &data, &fmt, &stride)) {
-      |                                                             ^~~~~~~
-      |                                                             |
-      |                                                             size_t * {aka long unsigned int *}
-/usr/include/wlr/types/wlr_buffer.h:132:32: note: expected ‘uint32_t *’ {aka ‘unsigned int *’} but argument is of type ‘size_t *’ {aka ‘long unsigned int *’}
-  132 |         void **data, uint32_t *format, size_t *stride);
-      |                      ~~~~~~~~~~^~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:190:10: error: too few arguments to function ‘wlr_buffer_begin_data_ptr_access’
-  190 |     if (!wlr_buffer_begin_data_ptr_access(buf, &data, &fmt, &stride)) {
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/wlr/types/wlr_buffer.h:131:6: note: declared here
-  131 | bool wlr_buffer_begin_data_ptr_access(struct wlr_buffer *buffer, uint32_t flags,
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:195:37: warning: initialization of ‘struct wlr_texture *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
-  195 |     struct wlr_texture *scene_tex = wlr_texture_from_wlr_buffer(renderer, buf);
-      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:213:46: warning: passing argument 2 of ‘wlr_output_begin_render_pass’ from incompatible pointer type [-Wincompatible-pointer-types]
-  213 |         wlr_output_begin_render_pass(output, allocator, bg_color);
-      |                                              ^~~~~~~~~
-      |                                              |
-      |                                              struct wlr_allocator *
-/usr/include/wlr/types/wlr_output.h:730:34: note: expected ‘struct wlr_output_state *’ but argument is of type ‘struct wlr_allocator *’
-  730 |         struct wlr_output_state *state, int *buffer_age, struct wlr_render_timer *timer);
-      |         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:213:57: warning: passing argument 3 of ‘wlr_output_begin_render_pass’ from incompatible pointer type [-Wincompatible-pointer-types]
-  213 |         wlr_output_begin_render_pass(output, allocator, bg_color);
-      |                                                         ^~~~~~~~
-      |                                                         |
-      |                                                         const float *
-/usr/include/wlr/types/wlr_output.h:730:46: note: expected ‘int *’ but argument is of type ‘const float *’
-  730 |         struct wlr_output_state *state, int *buffer_age, struct wlr_render_timer *timer);
-      |                                         ~~~~~^~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:213:9: error: too few arguments to function ‘wlr_output_begin_render_pass’
-  213 |         wlr_output_begin_render_pass(output, allocator, bg_color);
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/wlr/types/wlr_output.h:729:25: note: declared here
-  729 | struct wlr_render_pass *wlr_output_begin_render_pass(struct wlr_output *output,
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:220:39: warning: passing argument 2 of ‘wlr_render_pass_add_texture’ from incompatible pointer type [-Wincompatible-pointer-types]
-  220 |     wlr_render_pass_add_texture(pass, scene_tex, &full, NULL,
-      |                                       ^~~~~~~~~
-      |                                       |
-      |                                       struct wlr_texture *
-/usr/include/wlr/render/pass.h:94:50: note: expected ‘const struct wlr_render_texture_options *’ but argument is of type ‘struct wlr_texture *’
-   94 |         const struct wlr_render_texture_options *options);
-      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:220:5: error: too many arguments to function ‘wlr_render_pass_add_texture’
-  220 |     wlr_render_pass_add_texture(pass, scene_tex, &full, NULL,
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/wlr/render/pass.h:93:6: note: declared here
-   93 | void wlr_render_pass_add_texture(struct wlr_render_pass *render_pass,
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:222:39: warning: passing argument 2 of ‘wlr_render_pass_add_texture’ from incompatible pointer type [-Wincompatible-pointer-types]
-  222 |     wlr_render_pass_add_texture(pass, blur_tex, &box, NULL,
-      |                                       ^~~~~~~~
-      |                                       |
-      |                                       struct wlr_texture *
-/usr/include/wlr/render/pass.h:94:50: note: expected ‘const struct wlr_render_texture_options *’ but argument is of type ‘struct wlr_texture *’
-   94 |         const struct wlr_render_texture_options *options);
       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:222:5: error: too many arguments to function ‘wlr_render_pass_add_texture’
   222 |     wlr_render_pass_add_texture(pass, blur_tex, &box, NULL,
@@ -84,6 +14,76 @@
 /usr/include/wlr/render/pass.h:93:6: note: declared here
    93 | void wlr_render_pass_add_texture(struct wlr_render_pass *render_pass,
       |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20/38] Compiling C object openos-compositor.p/src_compositor.c.o
+FAILED: [code=1] openos-compositor.p/src_compositor.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_compositor.c.o -MF openos-compositor.p/src_compositor.c.o.d -o openos-compositor.p/src_compositor.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:25:
+/usr/include/wlr/types/wlr_layer_shell_v1.h:16:10: fatal error: wlr-layer-shell-unstable-v1-protocol.h: No such file or directory
+   16 | #include "wlr-layer-shell-unstable-v1-protocol.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[21/38] Compiling C object openos-compositor.p/src_gestures.c.o
+FAILED: [code=1] openos-compositor.p/src_gestures.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_gestures.c.o -MF openos-compositor.p/src_gestures.c.o.d -o openos-compositor.p/src_gestures.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/gestures.c
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/gestures.h:12,
+                 from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/gestures.c:1:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.h:9:10: fatal error: wlr/types/wlr_foreign_toplevel_management.h: No such file or directory
+    9 | #include <wlr/types/wlr_foreign_toplevel_management.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[22/38] Compiling C object openos-compositor.p/src_tiling.c.o
+FAILED: [code=1] openos-compositor.p/src_tiling.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_tiling.c.o -MF openos-compositor.p/src_tiling.c.o.d -o openos-compositor.p/src_tiling.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c:2:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.h:9:10: fatal error: wlr/types/wlr_foreign_toplevel_management.h: No such file or directory
+    9 | #include <wlr/types/wlr_foreign_toplevel_management.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[23/38] Compiling C object openos-compositor.p/src_workspace.c.o
+[24/38] Compiling C object openos-compositor.p/src_decorations.c.o
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c: In function ‘deco_create’:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:39:45: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+   39 |     deco->title_bar = wlr_scene_rect_create(&deco->tree->node,
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             struct wlr_scene_node *
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.h:10,
+                 from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:1:
+/usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
+  367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:48:47: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+   48 |     deco->controls_bg = wlr_scene_rect_create(&deco->tree->node,
+      |                                               ^~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               struct wlr_scene_node *
+/usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
+  367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:70:45: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+   70 |     deco->close_btn = wlr_scene_rect_create(&deco->tree->node,
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             struct wlr_scene_node *
+/usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
+  367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:77:43: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+   77 |     deco->max_btn = wlr_scene_rect_create(&deco->tree->node,
+      |                                           ^~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           struct wlr_scene_node *
+/usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
+  367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:85:43: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
+   85 |     deco->min_btn = wlr_scene_rect_create(&deco->tree->node,
+      |                                           ^~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           struct wlr_scene_node *
+/usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
+  367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
