@@ -1,9 +1,9 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32451360949
-- 提交: f14266add18b2772b1069015fb3d27b59d9025ab
-- 时间: 2026-08-21T05:41:04Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32454129870
+- 提交: 4cdcac8f2c52074075490c22289b20e879f79719
+- 时间: 2026-08-21T06:22:58Z
 
 ## 构建日志尾部
 ```
@@ -79,11 +79,11 @@ In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/c
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:61:13: warning: ‘view_animate_out’ defined but not used [-Wunused-function]
    61 | static void view_animate_out(struct openos_view *view) {
       |             ^~~~~~~~~~~~~~~~
-[22/38] Compiling C object openos-compositor.p/src_workspace.c.o
-[23/38] Compiling C object openos-compositor.p/src_tiling.c.o
 [24/38] Compiling C object openos-compositor.p/src_blur.c.o
 [25/38] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
-[26/38] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
+[26/38] Compiling C++ object openos-shell.p/meson-generated_moc_waylandbridge.cpp.o
+[27/38] Compiling C++ object openos-shell.p/meson-generated_moc_iconloader.cpp.o
+[28/38] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
