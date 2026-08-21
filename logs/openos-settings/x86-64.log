@@ -1,16 +1,16 @@
 # openos-settings 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-settings
-- 运行: https://github.com/OPENOS-dev/OPENOS-settings/actions/runs/32368580747
-- 提交: 907cccec8f2f9c213ba1c0567d8f9eb7775011db
-- 时间: 2026-08-20T12:24:18Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-settings/actions/runs/32445445285
+- 提交: 49a7ee81a86545515486586e7ef19dafb08ef6c1
+- 时间: 2026-08-21T04:02:14Z
 
 ## 构建日志尾部
 ```
 The Meson build system
 Version: 1.3.2
 Source dir: /home/runner/work/OPENOS-settings/OPENOS-settings
-Build dir: /tmp/tmp.zlVOreSvIg/build
+Build dir: /tmp/tmp.8Kj4tsaKdj/build
 Build type: native build
 Project name: openos-settings
 Project version: DEV2026.1
@@ -25,5 +25,5 @@ Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, Svg) found: NO (tried p
 
 meson.build:7:10: ERROR: Dependency "qt6" not found, tried pkgconfig and config-tool
 
-A full log can be found at /tmp/tmp.zlVOreSvIg/build/meson-logs/meson-log.txt
+A full log can be found at /tmp/tmp.8Kj4tsaKdj/build/meson-logs/meson-log.txt
 ```
