@@ -1,15 +1,12 @@
 # kernel 构建失败 (arm64)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32449807296
-- 提交: 774efa0d9790889e444b3daf759810f854647d8e
-- 时间: 2026-08-21T06:01:25Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32454269829
+- 提交: 292053fd19635bfa6ca8d3aafc7ca1dacf9e3a8a
+- 时间: 2026-08-21T07:12:50Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:52:12: warning: ‘openrsa_ts_input’ defined but not used [-Wunused-function]
-   52 | static int openrsa_ts_input(const u8 *data, size_t len, s64 ms,
-      |            ^~~~~~~~~~~~~~~~
 /home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:299:5: warning: no previous prototype for ‘openos_vmapp_init’ [-Wmissing-prototypes]
   299 | int openos_vmapp_init(void) { return vmapp_init(); }
       |     ^~~~~~~~~~~~~~~~~
