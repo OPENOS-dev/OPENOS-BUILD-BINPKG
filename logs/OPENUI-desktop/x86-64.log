@@ -1,9 +1,9 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32451327702
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32451360949
 - 提交: f14266add18b2772b1069015fb3d27b59d9025ab
-- 时间: 2026-08-21T05:39:39Z
+- 时间: 2026-08-21T05:41:04Z
 
 ## 构建日志尾部
 ```
@@ -79,11 +79,11 @@ In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/c
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:61:13: warning: ‘view_animate_out’ defined but not used [-Wunused-function]
    61 | static void view_animate_out(struct openos_view *view) {
       |             ^~~~~~~~~~~~~~~~
-[20/38] Compiling C object openos-compositor.p/src_workspace.c.o
-[21/38] Compiling C object openos-compositor.p/src_tiling.c.o
-[22/38] Compiling C object openos-compositor.p/src_decorations.c.o
-[23/38] Compiling C object openos-compositor.p/src_gestures.c.o
+[22/38] Compiling C object openos-compositor.p/src_workspace.c.o
+[23/38] Compiling C object openos-compositor.p/src_tiling.c.o
 [24/38] Compiling C object openos-compositor.p/src_blur.c.o
+[25/38] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[26/38] Compiling C++ object openos-shell.p/meson-generated_moc_shellbackend.cpp.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
