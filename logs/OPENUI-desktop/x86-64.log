@@ -1,28 +1,36 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32448230605
-- 提交: ff876db7e99461adcfe27335696b015af4938376
-- 时间: 2026-08-21T04:48:56Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32449776958
+- 提交: ed7a7547c9353e20bfbf502cc461aaf4c1a7e499
+- 时间: 2026-08-21T05:14:24Z
 
 ## 构建日志尾部
 ```
-      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:222:5: error: too many arguments to function ‘wlr_render_pass_add_texture’
-  222 |     wlr_render_pass_add_texture(pass, blur_tex, &box, NULL,
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/wlr/render/pass.h:93:6: note: declared here
-   93 | void wlr_render_pass_add_texture(struct wlr_render_pass *render_pass,
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  729 | struct wlr_render_pass *wlr_output_begin_render_pass(struct wlr_output *output,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:156:47: warning: unused parameter ‘allocator’ [-Wunused-parameter]
+  156 |                         struct wlr_allocator *allocator,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/blur.c:161:37: warning: unused parameter ‘bg_color’ [-Wunused-parameter]
+  161 |                         const float bg_color[4]) {
+      |                         ~~~~~~~~~~~~^~~~~~~~~~~
 [20/38] Compiling C object openos-compositor.p/src_compositor.c.o
 FAILED: [code=1] openos-compositor.p/src_compositor.c.o 
 ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_compositor.c.o -MF openos-compositor.p/src_compositor.c.o.d -o openos-compositor.p/src_compositor.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:25:
-/usr/include/wlr/types/wlr_layer_shell_v1.h:16:10: fatal error: wlr-layer-shell-unstable-v1-protocol.h: No such file or directory
-   16 | #include "wlr-layer-shell-unstable-v1-protocol.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:26:10: fatal error: wlr/types/wlr_foreign_toplevel_management.h: No such file or directory
+   26 | #include <wlr/types/wlr_foreign_toplevel_management.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-[21/38] Compiling C object openos-compositor.p/src_gestures.c.o
+[21/38] Compiling C object openos-compositor.p/src_tiling.c.o
+FAILED: [code=1] openos-compositor.p/src_tiling.c.o 
+ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_tiling.c.o -MF openos-compositor.p/src_tiling.c.o.d -o openos-compositor.p/src_tiling.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c:2:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.h:9:10: fatal error: wlr/types/wlr_foreign_toplevel_management.h: No such file or directory
+    9 | #include <wlr/types/wlr_foreign_toplevel_management.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[22/38] Compiling C object openos-compositor.p/src_gestures.c.o
 FAILED: [code=1] openos-compositor.p/src_gestures.c.o 
 ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_gestures.c.o -MF openos-compositor.p/src_gestures.c.o.d -o openos-compositor.p/src_gestures.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/gestures.c
 In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/gestures.h:12,
@@ -31,16 +39,7 @@ In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/g
     9 | #include <wlr/types/wlr_foreign_toplevel_management.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-[22/38] Compiling C object openos-compositor.p/src_tiling.c.o
-FAILED: [code=1] openos-compositor.p/src_tiling.c.o 
-ccache cc -Iopenos-compositor.p -I. -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop -I../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src -I/home/runner/work/_temp/OPENUI-desktop-x86-64-build/build -I/usr/include/libdrm -I/usr/include/pixman-1 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -O3 -DWLR_USE_UNSTABLE -MD -MQ openos-compositor.p/src_tiling.c.o -MF openos-compositor.p/src_tiling.c.o.d -o openos-compositor.p/src_tiling.c.o -c ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/tiling.c:2:
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.h:9:10: fatal error: wlr/types/wlr_foreign_toplevel_management.h: No such file or directory
-    9 | #include <wlr/types/wlr_foreign_toplevel_management.h>
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-[23/38] Compiling C object openos-compositor.p/src_workspace.c.o
-[24/38] Compiling C object openos-compositor.p/src_decorations.c.o
+[23/38] Compiling C object openos-compositor.p/src_decorations.c.o
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c: In function ‘deco_create’:
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/decorations.c:39:45: warning: passing argument 1 of ‘wlr_scene_rect_create’ from incompatible pointer type [-Wincompatible-pointer-types]
    39 |     deco->title_bar = wlr_scene_rect_create(&deco->tree->node,
@@ -84,6 +83,7 @@ In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/d
 /usr/include/wlr/types/wlr_scene.h:367:69: note: expected ‘struct wlr_scene_tree *’ but argument is of type ‘struct wlr_scene_node *’
   367 | struct wlr_scene_rect *wlr_scene_rect_create(struct wlr_scene_tree *parent,
       |                                              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[24/38] Compiling C object openos-compositor.p/src_workspace.c.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-x86-64-build/build
