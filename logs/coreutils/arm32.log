@@ -1,12 +1,90 @@
 # coreutils 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-coreutils
-- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/31999645898
-- 提交: 80ac555d2675fd4e2ae2ff7aa5dd7cf8ee0807b6
-- 时间: 2026-08-17T05:56:25Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-coreutils/actions/runs/32445323393
+- 提交: 8c994a00b44f5184bb03bb74150a89e7fea0c907
+- 时间: 2026-08-21T04:02:07Z
 
 ## 构建日志尾部
 ```
-
-ERROR: Neither source directory '/tmp/tmp.VEbDXejija/build' nor build directory None contain a build file meson.build.
+checking whether geteuid is declared... yes
+checking whether getuid is declared... yes
+checking whether getgrgid is declared... yes
+checking whether getpwuid is declared... yes
+checking whether ttyname is declared... yes
+checking whether setregid is declared... yes
+checking for declarations of fseeko and ftello... yes
+checking for struct stat.st_author... no
+checking for ino_t... yes
+checking for major_t... no
+checking for minor_t... no
+checking for mode_to_security_class... yes
+checking for inotify_init... yes
+checking for syncfs... yes
+checking for nfs/vfs.h... no
+checking for struct statvfs.f_basetype... no
+checking for struct statvfs.f_fstypename... no
+checking for struct statvfs.f_type... yes
+checking for struct statvfs.f_namemax... yes
+checking for cap_get_file in -lcap... yes
+checking for sys/capability.h... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for chroot... yes
+checking for gethostid... yes
+checking for sigsuspend... yes
+checking whether use of struct winsize requires sys/ptem.h... (cached) no
+checking for library containing dlopen... none required
+checking for dlopen and whether libcrypto is linked dynamically... libcrypto.so.3
+checking for fclonefileat... no
+checking for getattrat... no
+checking for statx... yes
+checking for initgroups... yes
+checking for syslog... yes
+checking for 3-argument setpriority function... yes
+checking POSIX termios... (cached) yes
+checking whether use of TIOCGWINSZ requires sys/ioctl.h... (cached) yes
+checking whether termios.h needs _XOPEN_SOURCE... no
+checking c_line in struct termios... yes
+checking whether use of struct winsize requires sys/ptem.h... (cached) no
+checking whether use of TIOCGWINSZ requires termios.h... (cached) no
+checking whether C compiler handles -Werror... yes
+checking whether C compiler handles -errwarn... no
+checking whether this system supports stdbuf... yes
+checking IEEE 16 bit floating point... yes
+checking Brain 16 bit floating point... yes
+checking if vmull intrinsic exists... no
+checking if pclmul intrinsic exists... yes
+checking if avx2 pclmul intrinsic exists... yes
+checking if avx512 pclmul intrinsic exists... yes
+checking for avx2 intrinsics... yes
+checking for avx512 intrinsics... yes
+checking for neon intrinsics... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyPreferredLanguages... (cached) no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating gnulib-tests/Makefile
+config.status: creating build-aux/makeinfo-wrapper.sh
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash '/tmp/tmp.Ynxa9ENB7G/src/build-aux/missing' aclocal-1.18 -I m4
+/tmp/tmp.Ynxa9ENB7G/src/build-aux/missing: line 85: aclocal-1.18: command not found
+WARNING: 'aclocal-1.18' is missing on your system.
+         You should only need it if you modified 'acinclude.m4' or
+         'configure.ac' or m4 files included by 'configure.ac'.
+make: *** [Makefile:9769: aclocal.m4] Error 127
 ```
