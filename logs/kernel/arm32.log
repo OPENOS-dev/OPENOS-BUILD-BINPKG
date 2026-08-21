@@ -1,26 +1,46 @@
 # kernel 构建失败 (arm32)
 
 - 仓库: OPENOS-dev/OPENOS-kernel
-- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32445525954
-- 提交: 7b3ea293fe006ff5932a6ec979249629ea2831c2
-- 时间: 2026-08-21T04:09:05Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-kernel/actions/runs/32447332565
+- 提交: f6e9a0cd849376fedf36527b9a81b50b58367387
+- 时间: 2026-08-21T04:38:59Z
 
 ## 构建日志尾部
 ```
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c: In function ‘oak_derive_key’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_lsm.c:478:1: warning: the frame size of 1032 bytes is larger than 1024 bytes [-Wframe-larger-than=]
-  478 | }
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:41:5: warning: no previous prototype for ‘openrsa_ms’ [-Wmissing-prototypes]
+   41 | s64 openrsa_ms(void)
+      |     ^~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:100:5: warning: no previous prototype for ‘openrsa_handshake’ [-Wmissing-prototypes]
+  100 | int openrsa_handshake(const u8 *client_data, size_t len,
+      |     ^~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_rsa.c:65:12: warning: ‘openrsa_sha256’ defined but not used [-Wunused-function]
+   65 | static int openrsa_sha256(const void *data, unsigned int len, u8 out[32])
+      |            ^~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_check_name’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:77:22: error: implicit declaration of function ‘isalnum’ [-Werror=implicit-function-declaration]
+   77 |                 if (!isalnum(*p) && *p != '_' && *p != '-')
+      |                      ^~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:46:1: note: include ‘<ctype.h>’ or provide a declaration of ‘isalnum’
+   45 | #include <linux/version.h>
+  +++ |+#include <ctype.h>
+   46 | 
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_ioctl’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:236:22: error: implicit declaration of function ‘ksys_unshare’ [-Werror=implicit-function-declaration]
+  236 |                 rc = ksys_unshare(CLONE_NEWNS);
+      |                      ^~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: At top level:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:297:5: warning: no previous prototype for ‘openos_vmapp_init’ [-Wmissing-prototypes]
+  297 | int openos_vmapp_init(void) { return vmapp_init(); }
+      |     ^~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:298:6: warning: no previous prototype for ‘openos_vmapp_exit’ [-Wmissing-prototypes]
+  298 | void openos_vmapp_exit(void) { misc_deregister(&vmapp_dev); }
+      |      ^~~~~~~~~~~~~~~~~
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c: In function ‘vmapp_ioctl’:
+/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/vmapp.c:268:1: warning: the frame size of 4984 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+  268 | }
       | ^
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c: In function ‘oak_sha256’:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c:107:9: error: implicit declaration of function ‘SHASH_DESC_ZERO_CLEAR’ [-Werror=implicit-function-declaration]
-  107 |         SHASH_DESC_ZERO_CLEAR(desc);
-      |         ^~~~~~~~~~~~~~~~~~~~~
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c: At top level:
-/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/security/openos/oak_early.c:211:13: warning: no previous prototype for ‘openos_oak_early_init’ [-Wmissing-prototypes]
-  211 | void __init openos_oak_early_init(void)
-      |             ^~~~~~~~~~~~~~~~~~~~~
 cc1: some warnings being treated as errors
-make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/oak_early.o] Error 1
+make[5]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:229: security/openos/vmapp.o] Error 1
 make[4]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security/openos] Error 2
 make[3]: *** [/home/runner/work/OPENOS-kernel/OPENOS-kernel/linux-6.12.103/scripts/Makefile.build:466: security] Error 2
 make[3]: *** Waiting for unfinished jobs....
