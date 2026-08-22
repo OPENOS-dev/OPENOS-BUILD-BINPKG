@@ -1,11 +1,90 @@
 # OPENUI-desktop 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/31993951556
-- 提交: 04fd60bb4adca3fc7b64cb39b370bdb631614068
-- 时间: 2026-08-17T04:21:48Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32573946847
+- 提交: d8201fe5447d4a63f2175421bd3d64b3a0fcfd4d
+- 时间: 2026-08-22T12:48:51Z
 
 ## 构建日志尾部
 ```
-(未捕获到日志)
+  686 |                 wlr_scene_node_coords(&v->scene_tree->node, &nx, &ny);
+      |                                                             ^~~
+      |                                                             |
+      |                                                             float *
+/usr/include/wlr/types/wlr_scene.h:282:62: note: expected ‘int *’ but argument is of type ‘float *’
+  282 | bool wlr_scene_node_coords(struct wlr_scene_node *node, int *lx, int *ly);
+      |                                                         ~~~~~^~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:686:66: warning: passing argument 3 of ‘wlr_scene_node_coords’ from incompatible pointer type [-Wincompatible-pointer-types]
+  686 |                 wlr_scene_node_coords(&v->scene_tree->node, &nx, &ny);
+      |                                                                  ^~~
+      |                                                                  |
+      |                                                                  float *
+/usr/include/wlr/types/wlr_scene.h:282:71: note: expected ‘int *’ but argument is of type ‘float *’
+  282 | bool wlr_scene_node_coords(struct wlr_scene_node *node, int *lx, int *ly);
+      |                                                                  ~~~~~^~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:691:15: error: expected ‘}’ before ‘else’
+  691 |             } else {
+      |               ^~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:692:35: error: ‘v’ undeclared (first use in this function)
+  692 |                 deco_clear_hover(&v->deco);
+      |                                   ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: At top level:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:695:5: error: expected identifier or ‘(’ before ‘}’ token
+  695 |     } else {
+      |     ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:695:7: error: expected identifier or ‘(’ before ‘else’
+  695 |     } else {
+      |       ^~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:703:43: error: expected ‘)’ before ‘->’ token
+  703 |     wlr_xcursor_manager_set_cursor_image(s->xcursor_mgr, "left_ptr", s->cursor);
+      |                                           ^~
+      |                                           )
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:704:1: error: expected identifier or ‘(’ before ‘}’ token
+  704 | }
+      | ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: In function ‘main’:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:731:5: warning: implicit declaration of function ‘wlr_scene_set_background_color’ [-Wimplicit-function-declaration]
+  731 |     wlr_scene_set_background_color(server.scene, bg);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:733:43: error: ‘WLR_COMPOSITOR_VERSION’ undeclared (first use in this function)
+  733 |     wlr_compositor_create(server.display, WLR_COMPOSITOR_VERSION, server.renderer);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:735:24: error: too few arguments to function ‘wlr_xdg_shell_create’
+  735 |     server.xdg_shell = wlr_xdg_shell_create(server.display);
+      |                        ^~~~~~~~~~~~~~~~~~~~
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:38:
+/usr/include/wlr/types/wlr_xdg_shell.h:304:23: note: declared here
+  304 | struct wlr_xdg_shell *wlr_xdg_shell_create(struct wl_display *display,
+      |                       ^~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:736:26: error: too few arguments to function ‘wlr_layer_shell_v1_create’
+  736 |     server.layer_shell = wlr_layer_shell_v1_create(server.display);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:39:
+/usr/include/wlr/types/wlr_layer_shell_v1.h:115:28: note: declared here
+  115 | struct wlr_layer_shell_v1 *wlr_layer_shell_v1_create(struct wl_display *display,
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:741:51: error: ‘struct <anonymous>’ has no member named ‘request_activate’
+  741 |     wl_signal_add(&server.foreign_toplevel->events.request_activate,
+      |                                                   ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:744:51: error: ‘struct <anonymous>’ has no member named ‘request_close’
+  744 |     wl_signal_add(&server.foreign_toplevel->events.request_close,
+      |                                                   ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:747:51: error: ‘struct <anonymous>’ has no member named ‘request_maximize’
+  747 |     wl_signal_add(&server.foreign_toplevel->events.request_maximize,
+      |                                                   ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:761:44: error: ‘struct <anonymous>’ has no member named ‘new_toplevel’
+  761 |     wl_signal_add(&server.xdg_shell->events.new_toplevel, &server.new_xdg_toplevel);
+      |                                            ^
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: At top level:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:76:13: warning: ‘view_animate_out’ defined but not used [-Wunused-function]
+   76 | static void view_animate_out(struct openos_view *view) {
+      |             ^~~~~~~~~~~~~~~~
+[21/38] Compiling C object openos-compositor.p/src_tiling.c.o
+[22/38] Compiling C object openos-compositor.p/src_workspace.c.o
+[23/38] Compiling C object openos-compositor.p/src_decorations.c.o
+[24/38] Compiling C object openos-compositor.p/src_blur.c.o
+[25/38] Compiling C++ object openos-shell.p/meson-generated_.._qt6-qml_qrc.cpp.o
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/OPENUI-desktop-loong64-build/build
 ```
