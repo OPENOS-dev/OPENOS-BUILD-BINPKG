@@ -1,0 +1,72 @@
+# openos-run 构建失败 (arm64)
+
+- 仓库: OPENOS-dev/OPENOS-run
+- 运行: https://github.com/OPENOS-dev/OPENOS-run/actions/runs/32574821057
+- 提交: 0dc7954e242dbb1e08a6c9c1cacd4c77fd44c13a
+- 时间: 2026-08-22T13:07:08Z
+
+## 构建日志尾部
+```
+The Meson build system
+Version: 1.3.2
+Source dir: /home/runner/work/OPENOS-run/OPENOS-run
+Build dir: /home/runner/work/_temp/openos-run-arm64-build/build
+Build type: native build
+Project name: openos-run
+Project version: DEV2026.1
+C++ compiler for the host machine: ccache c++ (gcc 13.3.0 "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, Svg) found: YES 6.4.2 (pkg-config)
+Detecting Qt6 tools
+Run-time dependency qt6 (modules: Core) found: YES 6.4.2 (pkg-config)
+Program /usr/lib/qt6/bin/moc found: NO
+Program /usr/lib/qt6/libexec/moc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/moc)
+Program /usr/lib/qt6/bin/uic found: NO
+Program /usr/lib/qt6/libexec/uic found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/uic)
+Program /usr/lib/qt6/bin/rcc found: NO
+Program /usr/lib/qt6/libexec/rcc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/rcc)
+Program /usr/lib/qt6/bin/lrelease found: NO
+Program /usr/lib/qt6/libexec/lrelease found: NO
+Program lrelease6 found: NO
+Program lrelease-qt6 found: NO
+Program lrelease found: NO
+Build targets in project: 2
+
+openos-run DEV2026.1
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+ninja: Entering directory `/home/runner/work/_temp/openos-run-arm64-build/build'
+[1/9] Generating 'openos-run.p/moc_apps.cpp'
+[2/9] Compiling Qt resources qt6-qml_qrc
+[3/9] Compiling C++ object openos-run.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[4/9] Compiling C++ object openos-run.p/main.cpp.o
+FAILED: [code=1] openos-run.p/main.cpp.o 
+ccache c++ -Iopenos-run.p -I. -I../../../OPENOS-run/OPENOS-run -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtQml -I/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -I/usr/include/x86_64-linux-gnu/qt6/QtNetwork -I/usr/include/x86_64-linux-gnu/qt6/QtQuick -I/usr/include/x86_64-linux-gnu/qt6/QtQmlModels -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtSvg -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -DQT_SVG_LIB -DQT_QUICK_LIB -DQT_QMLMODELS_LIB -DQT_OPENGL_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB -fPIC -MD -MQ openos-run.p/main.cpp.o -MF openos-run.p/main.cpp.o.d -o openos-run.p/main.cpp.o -c ../../../OPENOS-run/OPENOS-run/main.cpp
+../../../OPENOS-run/OPENOS-run/main.cpp: In function ‘int main(int, char**)’:
+../../../OPENOS-run/OPENOS-run/main.cpp:34:58: error: invalid new-expression of abstract class type ‘IconProvider’
+   34 |     engine.addImageProvider(QStringLiteral("icons"), new IconProvider);
+      |                                                          ^~~~~~~~~~~~
+In file included from ../../../OPENOS-run/OPENOS-run/main.cpp:24:
+../../../OPENOS-run/OPENOS-run/iconprovider.h:31:7: note:   because the following virtual functions are pure within ‘IconProvider’:
+   31 | class IconProvider : public QQuickAsyncImageProvider {
+      |       ^~~~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/qt6/QtQuick/QQuickAsyncImageProvider:1,
+                 from ../../../OPENOS-run/OPENOS-run/iconprovider.h:27:
+/usr/include/x86_64-linux-gnu/qt6/QtQuick/qquickimageprovider.h:86:34: note:     ‘virtual QQuickImageResponse* QQuickAsyncImageProvider::requestImageResponse(const QString&, const QSize&)’
+   86 |     virtual QQuickImageResponse *requestImageResponse(const QString &id, const QSize &requestedSize) = 0;
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+[5/9] Compiling C++ object openos-run.p/meson-generated_moc_apps.cpp.o
+[6/9] Compiling C++ object openos-run.p/iconprovider.cpp.o
+[7/9] Compiling C++ object openos-run.p/apps.cpp.o
+[8/9] Compiling C++ object openos-run.p/iconloader.cpp.o
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/openos-run-arm64-build/build
+```
