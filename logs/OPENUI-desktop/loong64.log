@@ -1,9 +1,9 @@
 # OPENUI-desktop 构建失败 (loong64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32574610985
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32613168089
 - 提交: 35e9204acce2a10e2c940b44cc65bddbd7e0e6ba
-- 时间: 2026-08-22T13:03:57Z
+- 时间: 2026-08-23T02:34:38Z
 
 ## 构建日志尾部
 ```
@@ -80,9 +80,9 @@ In file included from /usr/include/wayland-server-core.h:32,
   742 |     wlr_scene_set_background_color(server.scene, bg);
       |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [20/38] Compiling C object openos-compositor.p/src_gestures.c.o
-[21/38] Compiling C object openos-compositor.p/src_workspace.c.o
-[22/38] Compiling C object openos-compositor.p/src_tiling.c.o
-[23/38] Compiling C object openos-compositor.p/src_decorations.c.o
+[21/38] Compiling C object openos-compositor.p/src_tiling.c.o
+[22/38] Compiling C object openos-compositor.p/src_decorations.c.o
+[23/38] Compiling C object openos-compositor.p/src_workspace.c.o
 [24/38] Compiling C object openos-compositor.p/src_blur.c.o
 ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
