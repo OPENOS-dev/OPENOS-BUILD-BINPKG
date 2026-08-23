@@ -1,86 +1,86 @@
 # OPENUI-desktop 构建失败 (x86-64)
 
 - 仓库: OPENOS-dev/OPENOS-OPENUI-desktop
-- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32472160038
-- 提交: 4066ce63d14db722b0f838556fbe94fd60268cb8
-- 时间: 2026-08-21T10:21:12Z
+- 运行: https://github.com/OPENOS-dev/OPENOS-OPENUI-desktop/actions/runs/32612139531
+- 提交: 35e9204acce2a10e2c940b44cc65bddbd7e0e6ba
+- 时间: 2026-08-23T02:09:56Z
 
 ## 构建日志尾部
 ```
-  676 |                 deco_clear_hover(&v->deco);
+In file included from /usr/include/wayland-server-core.h:32,
+                 from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:24:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: In function ‘on_request_cursor’:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:663:48: error: ‘struct wlr_seat_pointer_request_set_cursor_event’ has no member named ‘seat’
+  663 |     struct openos_server *s = wl_container_of(e->seat, s, seat);
+      |                                                ^~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: At top level:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:669:6: error: conflicting types for ‘on_cursor_update’; have ‘void(struct openos_server *)’
+  669 | void on_cursor_update(struct openos_server *s) {
+      |      ^~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:644:5: note: previous declaration of ‘on_cursor_update’ with type ‘int()’
+  644 |     on_cursor_update(s);
+      |     ^~~~~~~~~~~~~~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: In function ‘on_cursor_update’:
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:684:53: warning: passing argument 1 of ‘wlr_scene_node_at’ from incompatible pointer type [-Wincompatible-pointer-types]
+  684 |     struct wlr_scene_node *node = wlr_scene_node_at(&s->scene->tree,
+      |                                                     ^~~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     struct wlr_scene_tree *
+/usr/include/wlr/types/wlr_scene.h:296:65: note: expected ‘struct wlr_scene_node *’ but argument is of type ‘struct wlr_scene_tree *’
+  296 | struct wlr_scene_node *wlr_scene_node_at(struct wlr_scene_node *node,
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:686:31: error: ‘WLR_SCENE_NODE_SURFACE’ undeclared (first use in this function); did you mean ‘WLR_SCENE_NODE_BUFFER’?
+  686 |     if (node && node->type == WLR_SCENE_NODE_SURFACE) {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~
+      |                               WLR_SCENE_NODE_BUFFER
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:686:31: note: each undeclared identifier is reported only once for each function it appears in
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:688:36: warning: implicit declaration of function ‘wlr_scene_surface_from_buffer’; did you mean ‘wlr_scene_surface_try_from_buffer’? [-Wimplicit-function-declaration]
+  688 |         struct wlr_surface *surf = wlr_scene_surface_from_buffer(sb);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                    wlr_scene_surface_try_from_buffer
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:688:36: warning: initialization of ‘struct wlr_surface *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:697:61: warning: passing argument 2 of ‘wlr_scene_node_coords’ from incompatible pointer type [-Wincompatible-pointer-types]
+  697 |                 wlr_scene_node_coords(&v->scene_tree->node, &nx, &ny);
+      |                                                             ^~~
+      |                                                             |
+      |                                                             float *
+/usr/include/wlr/types/wlr_scene.h:282:62: note: expected ‘int *’ but argument is of type ‘float *’
+  282 | bool wlr_scene_node_coords(struct wlr_scene_node *node, int *lx, int *ly);
+      |                                                         ~~~~~^~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:697:66: warning: passing argument 3 of ‘wlr_scene_node_coords’ from incompatible pointer type [-Wincompatible-pointer-types]
+  697 |                 wlr_scene_node_coords(&v->scene_tree->node, &nx, &ny);
+      |                                                                  ^~~
+      |                                                                  |
+      |                                                                  float *
+/usr/include/wlr/types/wlr_scene.h:282:71: note: expected ‘int *’ but argument is of type ‘float *’
+  282 | bool wlr_scene_node_coords(struct wlr_scene_node *node, int *lx, int *ly);
+      |                                                                  ~~~~~^~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:702:15: error: expected ‘}’ before ‘else’
+  702 |             } else {
+      |               ^~~~
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:703:35: error: ‘v’ undeclared (first use in this function)
+  703 |                 deco_clear_hover(&v->deco);
       |                                   ^
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: At top level:
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:679:5: error: expected identifier or ‘(’ before ‘}’ token
-  679 |     } else {
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:706:5: error: expected identifier or ‘(’ before ‘}’ token
+  706 |     } else {
       |     ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:679:7: error: expected identifier or ‘(’ before ‘else’
-  679 |     } else {
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:706:7: error: expected identifier or ‘(’ before ‘else’
+  706 |     } else {
       |       ^~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:687:43: error: expected ‘)’ before ‘->’ token
-  687 |     wlr_xcursor_manager_set_cursor_image(s->xcursor_mgr, "left_ptr", s->cursor);
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:714:43: error: expected ‘)’ before ‘->’ token
+  714 |     wlr_xcursor_manager_set_cursor_image(s->xcursor_mgr, "left_ptr", s->cursor);
       |                                           ^~
       |                                           )
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:688:1: error: expected identifier or ‘(’ before ‘}’ token
-  688 | }
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:715:1: error: expected identifier or ‘(’ before ‘}’ token
+  715 | }
       | ^
 ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: In function ‘main’:
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:704:27: warning: implicit declaration of function ‘wlr_scene_output_layout_create’; did you mean ‘wlr_output_layout_create’? [-Wimplicit-function-declaration]
-  704 |     server.scene_layout = wlr_scene_output_layout_create(server.scene, server.output_layout);
-      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                           wlr_output_layout_create
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:704:25: warning: assignment to ‘struct wlr_scene_output_layout *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
-  704 |     server.scene_layout = wlr_scene_output_layout_create(server.scene, server.output_layout);
-      |                         ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:715:5: warning: implicit declaration of function ‘wlr_scene_set_background_color’ [-Wimplicit-function-declaration]
-  715 |     wlr_scene_set_background_color(server.scene, bg);
+../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:742:5: warning: implicit declaration of function ‘wlr_scene_set_background_color’ [-Wimplicit-function-declaration]
+  742 |     wlr_scene_set_background_color(server.scene, bg);
       |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:717:49: warning: passing argument 2 of ‘wlr_compositor_create’ makes integer from pointer without a cast [-Wint-conversion]
-  717 |     wlr_compositor_create(server.display, server.renderer);
-      |                                           ~~~~~~^~~~~~~~~
-      |                                                 |
-      |                                                 struct wlr_renderer *
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:14:
-/usr/include/wlr/types/wlr_compositor.h:425:18: note: expected ‘uint32_t’ {aka ‘unsigned int’} but argument is of type ‘struct wlr_renderer *’
-  425 |         uint32_t version, struct wlr_renderer *renderer);
-      |         ~~~~~~~~~^~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:717:5: error: too few arguments to function ‘wlr_compositor_create’
-  717 |     wlr_compositor_create(server.display, server.renderer);
-      |     ^~~~~~~~~~~~~~~~~~~~~
-/usr/include/wlr/types/wlr_compositor.h:424:24: note: declared here
-  424 | struct wlr_compositor *wlr_compositor_create(struct wl_display *display,
-      |                        ^~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:719:24: error: too few arguments to function ‘wlr_xdg_shell_create’
-  719 |     server.xdg_shell = wlr_xdg_shell_create(server.display);
-      |                        ^~~~~~~~~~~~~~~~~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:24:
-/usr/include/wlr/types/wlr_xdg_shell.h:304:23: note: declared here
-  304 | struct wlr_xdg_shell *wlr_xdg_shell_create(struct wl_display *display,
-      |                       ^~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:720:26: error: too few arguments to function ‘wlr_layer_shell_v1_create’
-  720 |     server.layer_shell = wlr_layer_shell_v1_create(server.display);
-      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:25:
-/usr/include/wlr/types/wlr_layer_shell_v1.h:115:28: note: declared here
-  115 | struct wlr_layer_shell_v1 *wlr_layer_shell_v1_create(struct wl_display *display,
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:725:51: error: ‘struct <anonymous>’ has no member named ‘request_activate’
-  725 |     wl_signal_add(&server.foreign_toplevel->events.request_activate,
-      |                                                   ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:728:51: error: ‘struct <anonymous>’ has no member named ‘request_close’
-  728 |     wl_signal_add(&server.foreign_toplevel->events.request_close,
-      |                                                   ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:731:51: error: ‘struct <anonymous>’ has no member named ‘request_maximize’
-  731 |     wl_signal_add(&server.foreign_toplevel->events.request_maximize,
-      |                                                   ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:745:44: error: ‘struct <anonymous>’ has no member named ‘new_toplevel’
-  745 |     wl_signal_add(&server.xdg_shell->events.new_toplevel, &server.new_xdg_toplevel);
-      |                                            ^
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c: At top level:
-../../../OPENOS-OPENUI-desktop/OPENOS-OPENUI-desktop/src/compositor.c:61:13: warning: ‘view_animate_out’ defined but not used [-Wunused-function]
-   61 | static void view_animate_out(struct openos_view *view) {
-      |             ^~~~~~~~~~~~~~~~
-[20/38] Compiling C object openos-compositor.p/src_gestures.c.o
-[21/38] Compiling C object openos-compositor.p/src_tiling.c.o
+[20/38] Compiling C object openos-compositor.p/src_tiling.c.o
+[21/38] Compiling C object openos-compositor.p/src_gestures.c.o
 [22/38] Compiling C object openos-compositor.p/src_decorations.c.o
 [23/38] Compiling C object openos-compositor.p/src_workspace.c.o
 [24/38] Compiling C object openos-compositor.p/src_blur.c.o
