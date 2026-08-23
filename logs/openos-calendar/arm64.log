@@ -1,0 +1,90 @@
+# openos-calendar 构建失败 (arm64)
+
+- 仓库: OPENOS-dev/OPENOS-calendar
+- 运行: https://github.com/OPENOS-dev/OPENOS-calendar/actions/runs/32612220138
+- 提交: 364e03f764a820bb72b40bc1a0fab6a2799dc129
+- 时间: 2026-08-23T02:12:16Z
+
+## 构建日志尾部
+```
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency qt6 (modules: Core, Gui, Qml, Quick, Svg) found: YES 6.4.2 (pkg-config)
+Detecting Qt6 tools
+Run-time dependency qt6 (modules: Core) found: YES 6.4.2 (pkg-config)
+Program /usr/lib/qt6/bin/moc found: NO
+Program /usr/lib/qt6/libexec/moc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/moc)
+Program /usr/lib/qt6/bin/uic found: NO
+Program /usr/lib/qt6/libexec/uic found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/uic)
+Program /usr/lib/qt6/bin/rcc found: NO
+Program /usr/lib/qt6/libexec/rcc found: YES 6.4.2 6.4.2 (/usr/lib/qt6/libexec/rcc)
+Program /usr/lib/qt6/bin/lrelease found: NO
+Program /usr/lib/qt6/libexec/lrelease found: NO
+Program lrelease6 found: NO
+Program lrelease-qt6 found: NO
+Program lrelease found: NO
+Build targets in project: 2
+
+openos-calendar DEV2026.1
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/local/bin/ninja
+ninja: Entering directory `/tmp/tmp.Uyiu5VvfiZ/build'
+[1/6] Compiling Qt resources qt6-qml_qrc
+[2/6] Compiling C++ object openos-calendar.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[3/6] Compiling C++ object openos-calendar.p/iconloader.cpp.o
+FAILED: [code=1] openos-calendar.p/iconloader.cpp.o 
+ccache c++ -Iopenos-calendar.p -I. -I../../../home/runner/work/OPENOS-calendar/OPENOS-calendar -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtQml -I/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -I/usr/include/x86_64-linux-gnu/qt6/QtNetwork -I/usr/include/x86_64-linux-gnu/qt6/QtQuick -I/usr/include/x86_64-linux-gnu/qt6/QtQmlModels -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtSvg -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -DQT_SVG_LIB -DQT_QUICK_LIB -DQT_QMLMODELS_LIB -DQT_OPENGL_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB -fPIC -MD -MQ openos-calendar.p/iconloader.cpp.o -MF openos-calendar.p/iconloader.cpp.o.d -o openos-calendar.p/iconloader.cpp.o -c ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconloader.cpp
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconloader.cpp: In member function ‘QUrl IconLoader::url(const QString&, int, const QString&, const QString&) const’:
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconloader.cpp:151:15: error: aggregate ‘QUrlQuery q’ has incomplete type and cannot be defined
+  151 |     QUrlQuery q;
+      |               ^
+[4/6] Compiling C++ object openos-calendar.p/main.cpp.o
+FAILED: [code=1] openos-calendar.p/main.cpp.o 
+ccache c++ -Iopenos-calendar.p -I. -I../../../home/runner/work/OPENOS-calendar/OPENOS-calendar -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtQml -I/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -I/usr/include/x86_64-linux-gnu/qt6/QtNetwork -I/usr/include/x86_64-linux-gnu/qt6/QtQuick -I/usr/include/x86_64-linux-gnu/qt6/QtQmlModels -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtSvg -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -DQT_SVG_LIB -DQT_QUICK_LIB -DQT_QMLMODELS_LIB -DQT_OPENGL_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB -fPIC -MD -MQ openos-calendar.p/main.cpp.o -MF openos-calendar.p/main.cpp.o.d -o openos-calendar.p/main.cpp.o -c ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/main.cpp
+In file included from ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/main.cpp:22:
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:32:12: error: ‘QImage IconProvider::requestImage(const QString&, QSize*, const QSize&, const QUrlQuery&)’ marked ‘override’, but does not override
+   32 |     QImage requestImage(const QString& id, QSize* size,
+      |            ^~~~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/qt6/QtQuick/QQuickAsyncImageProvider:1,
+                 from ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:27:
+/usr/include/x86_64-linux-gnu/qt6/QtQuick/qquickimageprovider.h:72:20: warning: ‘virtual QImage QQuickImageProvider::requestImage(const QString&, QSize*, const QSize&)’ was hidden [-Woverloaded-virtual=]
+   72 |     virtual QImage requestImage(const QString &id, QSize *size, const QSize& requestedSize);
+      |                    ^~~~~~~~~~~~
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:32:12: note:   by ‘QImage IconProvider::requestImage(const QString&, QSize*, const QSize&, const QUrlQuery&)’
+   32 |     QImage requestImage(const QString& id, QSize* size,
+      |            ^~~~~~~~~~~~
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/main.cpp: In function ‘int main(int, char**)’:
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/main.cpp:29:58: error: invalid new-expression of abstract class type ‘IconProvider’
+   29 |     engine.addImageProvider(QStringLiteral("icons"), new IconProvider);
+      |                                                          ^~~~~~~~~~~~
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:30:7: note:   because the following virtual functions are pure within ‘IconProvider’:
+   30 | class IconProvider : public QQuickAsyncImageProvider {
+      |       ^~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/qt6/QtQuick/qquickimageprovider.h:86:34: note:     ‘virtual QQuickImageResponse* QQuickAsyncImageProvider::requestImageResponse(const QString&, const QSize&)’
+   86 |     virtual QQuickImageResponse *requestImageResponse(const QString &id, const QSize &requestedSize) = 0;
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+[5/6] Compiling C++ object openos-calendar.p/iconprovider.cpp.o
+FAILED: [code=1] openos-calendar.p/iconprovider.cpp.o 
+ccache c++ -Iopenos-calendar.p -I. -I../../../home/runner/work/OPENOS-calendar/OPENOS-calendar -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtQml -I/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration -I/usr/include/x86_64-linux-gnu/qt6/QtNetwork -I/usr/include/x86_64-linux-gnu/qt6/QtQuick -I/usr/include/x86_64-linux-gnu/qt6/QtQmlModels -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtSvg -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -DQT_SVG_LIB -DQT_QUICK_LIB -DQT_QMLMODELS_LIB -DQT_OPENGL_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB -fPIC -MD -MQ openos-calendar.p/iconprovider.cpp.o -MF openos-calendar.p/iconprovider.cpp.o.d -o openos-calendar.p/iconprovider.cpp.o -c ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.cpp
+In file included from ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.cpp:15:
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:32:12: error: ‘QImage IconProvider::requestImage(const QString&, QSize*, const QSize&, const QUrlQuery&)’ marked ‘override’, but does not override
+   32 |     QImage requestImage(const QString& id, QSize* size,
+      |            ^~~~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/qt6/QtQuick/QQuickAsyncImageProvider:1,
+                 from ../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:27:
+/usr/include/x86_64-linux-gnu/qt6/QtQuick/qquickimageprovider.h:72:20: warning: ‘virtual QImage QQuickImageProvider::requestImage(const QString&, QSize*, const QSize&)’ was hidden [-Woverloaded-virtual=]
+   72 |     virtual QImage requestImage(const QString &id, QSize *size, const QSize& requestedSize);
+      |                    ^~~~~~~~~~~~
+../../../home/runner/work/OPENOS-calendar/OPENOS-calendar/iconprovider.h:32:12: note:   by ‘QImage IconProvider::requestImage(const QString&, QSize*, const QSize&, const QUrlQuery&)’
+   32 |     QImage requestImage(const QString& id, QSize* size,
+      |            ^~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/local/bin/ninja -C /tmp/tmp.Uyiu5VvfiZ/build
+```
