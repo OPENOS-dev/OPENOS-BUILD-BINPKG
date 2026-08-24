@@ -1,18 +1,18 @@
 # openos-calc 构建失败 (x86)
 
-- 仓库: OPENOS-dev/OPENOS-OAK
-- 运行: https://github.com/OPENOS-dev/OPENOS-OAK/actions/runs/32691916915
-- 提交: 4678a07dc70e10f1af1ca080c269b0ee957ba9bc
-- 时间: 2026-08-24T04:59:23Z
+- 仓库: OPENOS-dev/OPENOS-settings
+- 运行: https://github.com/OPENOS-dev/OPENOS-settings/actions/runs/32691911946
+- 提交: 6e6344cd9fd7e252681e17846a9b500fdc09b9b8
+- 时间: 2026-08-24T04:59:45Z
 
 ## 构建日志尾部
 ```
 The Meson build system
 Version: 1.3.2
-Source dir: /home/runner/work/OPENOS-OAK/OPENOS-OAK
+Source dir: /home/runner/work/OPENOS-settings/OPENOS-settings
 Build dir: /home/runner/work/_temp/openos-calc-x86-build/build
 Build type: native build
-Project name: openos-oak
+Project name: openos-settings
 Project version: DEV2026.1
 C++ compiler for the host machine: ccache c++ (gcc 13.3.0 "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
 C++ linker for the host machine: c++ ld.bfd 2.42
@@ -35,7 +35,7 @@ Program lrelease-qt6 found: NO
 Program lrelease found: NO
 Build targets in project: 2
 
-openos-oak DEV2026.1
+openos-settings DEV2026.1
 
   User defined options
     buildtype: release
@@ -43,7 +43,24 @@ openos-oak DEV2026.1
 
 Found ninja-1.13.2 at /usr/local/bin/ninja
 ninja: Entering directory `/home/runner/work/_temp/openos-calc-x86-build/build'
-ninja: error: '/home/runner/work/OPENOS-OAK/OPENOS-OAK/OpenUI.qml', needed by 'qt6-qml_qrc.cpp', missing and no known rule to make it
+[1/6] Compiling Qt resources qt6-qml_qrc
+[2/6] Compiling C++ object openos-settings.p/meson-generated_.._qt6-qml_qrc.cpp.o
+[3/6] Compiling C++ object openos-settings.p/main.cpp.o
+[4/6] Compiling C++ object openos-settings.p/iconprovider.cpp.o
+[5/6] Compiling C++ object openos-settings.p/iconloader.cpp.o
+[6/6] Linking target openos-settings
+FAILED: [code=1] openos-settings 
+c++  -o openos-settings openos-settings.p/meson-generated_.._qt6-qml_qrc.cpp.o openos-settings.p/main.cpp.o openos-settings.p/iconloader.cpp.o openos-settings.p/iconprovider.cpp.o -Wl,--as-needed -Wl,--no-undefined -Wl,-O1 -Wl,--start-group /usr/lib/x86_64-linux-gnu/libQt6Core.so /usr/lib/x86_64-linux-gnu/libQt6Gui.so /usr/lib/x86_64-linux-gnu/libQt6Qml.so /usr/lib/x86_64-linux-gnu/libQt6Network.so /usr/lib/x86_64-linux-gnu/libQt6Quick.so /usr/lib/x86_64-linux-gnu/libQt6QmlModels.so /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so /usr/lib/x86_64-linux-gnu/libQt6Svg.so -Wl,--end-group
+/usr/bin/ld: openos-settings.p/main.cpp.o: in function `IconLoader::~IconLoader()':
+main.cpp:(.text._ZN10IconLoaderD2Ev[_ZN10IconLoaderD5Ev]+0x18): undefined reference to `vtable for IconLoader'
+/usr/bin/ld: openos-settings.p/main.cpp.o: in function `IconLoader::~IconLoader()':
+main.cpp:(.text._ZN10IconLoaderD0Ev[_ZN10IconLoaderD5Ev]+0x18): undefined reference to `vtable for IconLoader'
+/usr/bin/ld: openos-settings.p/iconloader.cpp.o: in function `IconLoader::IconLoader(QObject*)':
+iconloader.cpp:(.text+0x745): undefined reference to `vtable for IconLoader'
+/usr/bin/ld: openos-settings.p/iconloader.cpp.o: in function `IconLoader::setTheme(QString const&)':
+iconloader.cpp:(.text+0x30b): undefined reference to `IconLoader::themeChanged()'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
 INFO: autodetecting backend as ninja
 INFO: calculating backend command to run: /usr/local/bin/ninja -C /home/runner/work/_temp/openos-calc-x86-build/build
 ```
