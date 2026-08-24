@@ -1,0 +1,90 @@
+# glibc 构建失败 (arm32)
+
+- 仓库: OPENOS-dev/OPENOS-glibc
+- 运行: https://github.com/OPENOS-dev/OPENOS-glibc/actions/runs/32691949123
+- 提交: 9e8b5c3c4be0c50799295a72ca66ba71657d8942
+- 时间: 2026-08-24T05:01:11Z
+
+## 构建日志尾部
+```
+                 from ../sysdeps/arm/nptl/tls.h:39,
+                 from ../sysdeps/unix/sysv/linux/arm/tls.h:23,
+                 from ../include/link.h:51,
+                 from ../include/dlfcn.h:4,
+                 from ../sysdeps/generic/ldsodefs.h:32,
+                 from ../sysdeps/arm/ldsodefs.h:38,
+                 from ../sysdeps/gnu/ldsodefs.h:46,
+                 from ../sysdeps/unix/sysv/linux/ldsodefs.h:28,
+                 from ../sysdeps/unix/sysv/linux/arm/ldsodefs.h:22,
+                 from <stdin>:2:
+../sysdeps/arm/sysdep.h:49:4: error: #error unknown arm architecture
+   49 | #  error unknown arm architecture
+      |    ^~~~~
+../sysdeps/arm/sysdep.h:53:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   53 | #if __ARM_ARCH > 4 || defined (__ARM_ARCH_4T__)
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:53:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   53 | #if __ARM_ARCH > 4 || defined (__ARM_ARCH_4T__)
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:56:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   56 | #if __ARM_ARCH > 4
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:56:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   56 | #if __ARM_ARCH > 4
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:59:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   59 | #if __ARM_ARCH > 6 || defined (__ARM_ARCH_6K__) || defined (__ARM_ARCH_6ZK__)
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:59:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   59 | #if __ARM_ARCH > 6 || defined (__ARM_ARCH_6K__) || defined (__ARM_ARCH_6ZK__)
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:62:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   62 | #if __ARM_ARCH > 6 || defined (__ARM_ARCH_6T2__)
+      |     ^~~~~~~~~~
+../sysdeps/arm/sysdep.h:62:5: warning: "__ARM_ARCH" is not defined, evaluates to 0 [-Wundef]
+   62 | #if __ARM_ARCH > 6 || defined (__ARM_ARCH_6T2__)
+      |     ^~~~~~~~~~
+../sysdeps/generic/ldsodefs.h: In function ‘l_soname’:
+../sysdeps/generic/ldsodefs.h:100:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  100 |     return ((const char *) D_PTR (l, l_info[DT_STRTAB])
+      |             ^
+Traceback (most recent call last):
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 120, in <module>
+    main()
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 116, in main
+    consts = glibcextract.compute_c_consts(sym_data, args.cc)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/scripts/glibcextract.py", line 63, in compute_c_consts
+    subprocess.check_call(cmd, shell=True)
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'gcc -std=gnu11 -fgnu89-inline  -g -O2 -Wall -Wwrite-strings -Wundef -Wimplicit-fallthrough -fmerge-all-constants -frounding-math -ftrapping-math -fno-stack-protector -fno-common -U_FORTIFY_SOURCE -Wstrict-prototypes -Wold-style-definition   -fmath-errno      -ftls-model=initial-exec     -I../include -I/tmp/tmp.Y6ivC8AG49/build/csu  -I/tmp/tmp.Y6ivC8AG49/build  -I../sysdeps/unix/sysv/linux/arm/le  -I../sysdeps/unix/sysv/linux/arm  -I../sysdeps/arm/nptl  -I../sysdeps/unix/sysv/linux/include -I../sysdeps/unix/sysv/linux  -I../sysdeps/nptl  -I../sysdeps/pthread  -I../sysdeps/gnu  -I../sysdeps/unix/inet  -I../sysdeps/unix/sysv  -I../sysdeps/unix/arm  -I../sysdeps/unix  -I../sysdeps/posix  -I../sysdeps/arm/le  -I../sysdeps/arm/include -I../sysdeps/arm  -I../sysdeps/wordsize-32  -I../sysdeps/ieee754/flt-32  -I../sysdeps/ieee754/dbl-64  -I../sysdeps/arm/fpu  -I../sysdeps/ieee754  -I../sysdeps/generic  -I.. -I../libio -I.  -D_LIBC_REENTRANT -include /tmp/tmp.Y6ivC8AG49/build/libc-modules.h -DMODULE_NAME=libc -include ../include/libc-symbols.h       -DTOP_NAMESPACE=glibc -DGEN_AS_CONST_HEADERS 		   -MD -MP -MF /tmp/tmp.Y6ivC8AG49/build/rtld-sizes.h.dT 		   -MT '/tmp/tmp.Y6ivC8AG49/build/rtld-sizes.h.d /tmp/tmp.Y6ivC8AG49/build/rtld-sizes.h' -S -o /tmp/tmp8ecqetjc/test.s -x c - < /tmp/tmp8ecqetjc/test.c' returned non-zero exit status 1.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 120, in <module>
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 120, in <module>
+    main()
+    main()
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 116, in main
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/csu/../scripts/gen-as-const.py", line 116, in main
+    consts = glibcextract.compute_c_consts(sym_data, args.cc)
+    consts = glibcextract.compute_c_consts(sym_data, args.cc)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/scripts/glibcextract.py", line 63, in compute_c_consts
+  File "/home/runner/work/OPENOS-glibc/OPENOS-glibc/src/scripts/glibcextract.py", line 63, in compute_c_consts
+    subprocess.check_call(cmd, shell=True)
+    subprocess.check_call(cmd, shell=True)
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'gcc -std=gnu11 -fgnu89-inline  -g -O2 -Wall -Wwrite-strings -Wundef -Wimplicit-fallthrough -fmerge-all-constants -frounding-math -ftrapping-math -fno-stack-protector -fno-common -U_FORTIFY_SOURCE -Wstrict-prototypes -Wold-style-definition   -fmath-errno      -ftls-model=initial-exec     -I../include -I/tmp/tmp.Y6ivC8AG49/build/csu  -I/tmp/tmp.Y6ivC8AG49/build  -I../sysdeps/unix/sysv/linux/arm/le  -I../sysdeps/unix/sysv/linux/arm  -I../sysdeps/arm/nptl  -I../sysdeps/unix/sysv/linux/include -I../sysdeps/unix/sysv/linux  -I../sysdeps/nptl  -I../sysdeps/pthread  -I../sysdeps/gnu  -I../sysdeps/unix/inet  -I../sysdeps/unix/sysv  -I../sysdeps/unix/arm  -I../sysdeps/unix  -I../sysdeps/posix  -I../sysdeps/arm/le  -I../sysdeps/arm/include -I../sysdeps/arm  -I../sysdeps/wordsize-32  -I../sysdeps/ieee754/flt-32  -I../sysdeps/ieee754/dbl-64  -I../sysdeps/arm/fpu  -I../sysdeps/ieee754  -I../sysdeps/generic  -I.. -I../libio -I.  -D_LIBC_REENTRANT -include /tmp/tmp.Y6ivC8AG49/build/libc-modules.h -DMODULE_NAME=libc -include ../include/libc-symbols.h       -DTOP_NAMESPACE=glibc -DGEN_AS_CONST_HEADERS 		   -MD -MP -MF /tmp/tmp.Y6ivC8AG49/build/rtld-global-offsets.h.dT 		   -MT '/tmp/tmp.Y6ivC8AG49/build/rtld-global-offsets.h.d /tmp/tmp.Y6ivC8AG49/build/rtld-global-offsets.h' -S -o /tmp/tmpcerlxh4a/test.s -x c - < /tmp/tmpcerlxh4a/test.c' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command 'gcc -std=gnu11 -fgnu89-inline  -g -O2 -Wall -Wwrite-strings -Wundef -Wimplicit-fallthrough -fmerge-all-constants -frounding-math -ftrapping-math -fno-stack-protector -fno-common -U_FORTIFY_SOURCE -Wstrict-prototypes -Wold-style-definition   -fmath-errno      -ftls-model=initial-exec     -I../include -I/tmp/tmp.Y6ivC8AG49/build/csu  -I/tmp/tmp.Y6ivC8AG49/build  -I../sysdeps/unix/sysv/linux/arm/le  -I../sysdeps/unix/sysv/linux/arm  -I../sysdeps/arm/nptl  -I../sysdeps/unix/sysv/linux/include -I../sysdeps/unix/sysv/linux  -I../sysdeps/nptl  -I../sysdeps/pthread  -I../sysdeps/gnu  -I../sysdeps/unix/inet  -I../sysdeps/unix/sysv  -I../sysdeps/unix/arm  -I../sysdeps/unix  -I../sysdeps/posix  -I../sysdeps/arm/le  -I../sysdeps/arm/include -I../sysdeps/arm  -I../sysdeps/wordsize-32  -I../sysdeps/ieee754/flt-32  -I../sysdeps/ieee754/dbl-64  -I../sysdeps/arm/fpu  -I../sysdeps/ieee754  -I../sysdeps/generic  -I.. -I../libio -I.  -D_LIBC_REENTRANT -include /tmp/tmp.Y6ivC8AG49/build/libc-modules.h -DMODULE_NAME=libc -include ../include/libc-symbols.h       -DTOP_NAMESPACE=glibc -DGEN_AS_CONST_HEADERS 		   -MD -MP -MF /tmp/tmp.Y6ivC8AG49/build/tlsdesc.h.dT 		   -MT '/tmp/tmp.Y6ivC8AG49/build/tlsdesc.h.d /tmp/tmp.Y6ivC8AG49/build/tlsdesc.h' -S -o /tmp/tmp2v_83pc1/test.s -x c - < /tmp/tmp2v_83pc1/test.c' returned non-zero exit status 1.
+make[2]: *** [../Makerules:281: /tmp/tmp.Y6ivC8AG49/build/rtld-sizes.h] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [../Makerules:281: /tmp/tmp.Y6ivC8AG49/build/tlsdesc.h] Error 1
+make[2]: *** [../Makerules:281: /tmp/tmp.Y6ivC8AG49/build/rtld-global-offsets.h] Error 1
+make[1]: *** [Makefile:488: csu/subdir_lib] Error 2
+make: *** [Makefile:20: all] Error 2
+```
